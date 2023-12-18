@@ -34,6 +34,16 @@ body
     font-weight: normal
     font-style: normal
 
+@font-face 
+    font-family: 'Proxima Nova Thin'
+    src: url('/src/fonts/ProximaNovaT-Thin.eot')
+    src: url('/src/fonts/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
+    url('/src/fonts/ProximaNovaT-Thin.woff') format('woff'),
+    url('/src/fonts/ProximaNovaT-Thin.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+
 
 
 
@@ -157,6 +167,7 @@ body
     position: relative
     &__fon-picture
         position: absolute
+        top: 1100px
         right: 0
     .container
         max-width: 1744px
@@ -164,12 +175,65 @@ body
     &__conditions
         display: flex
         justify-content: center
+        align-items: center
+        margin-bottom: 6px
         &__desc
             width: 605px
             &__title
-                font-family: 'Mont Light'
+                font-family: 'Proxima Nova Thin'
                 font-weight: 200
                 font-size: 48px
                 line-height: 61px
+                color: #323638
+                margin: 0 0 52px 0
+                span
+                    font-family: 'Proxima Nova Thin'
+                    font-weight: 600
+                    font-size: 48px
+                    line-height: 61px
+                    color: #323638
+            &__text
+                font-family: 'Proxima Nova Thin'
+                font-weight: 500
+                font-size: 24px
+                line-height: 31px
+                color: #747474
         &__picture
             width: 859px
+    &__offer-list
+        width: 1472px
+        margin: 0 auto
+        &__title
+            font-family: 'Proxima Nova Thin'
+            font-weight: 300
+            font-size: 48px
+            line-height: 61px
+            margin: 0 auto
+            width: 1160px
+            color: #323638
+            margin-bottom: 56px
+            span
+                font-family: 'Proxima Nova Thin'
+                font-weight: 600
+                font-size: 48px
+                line-height: 61px
+        &__left
+            width: 800px
+            position: relative
+            &__image
+                border-radius: 24px
+            &__image:nth-child(odd)
+                margin-right: 24px
+            &__image:nth-child(1)
+                margin-bottom: 24px
+            &__image:nth-child(2)
+                margin-bottom: 24px
+            .circle
+                position: absolute
+                top: 200px
+                left: 190px
+                background: white
+                width: 204px
+                height: 204px
+                border-radius: 100px
+                padding: 50px 0 0 30px

@@ -28,6 +28,13 @@ body {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Proxima Nova Thin';
+  src: url("/src/fonts/ProximaNovaT-Thin.eot");
+  src: url("/src/fonts/ProximaNovaT-Thin.eot?#iefix") format("embedded-opentype"), url("/src/fonts/ProximaNovaT-Thin.woff") format("woff"), url("/src/fonts/ProximaNovaT-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 .header {
   margin-bottom: 18px; }
   .header .container {
@@ -143,19 +150,73 @@ body {
   position: relative; }
   .main__fon-picture {
     position: absolute;
+    top: 1100px;
     right: 0; }
   .main .container {
     max-width: 1744px;
     margin: 0 auto; }
   .main__conditions {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px; }
     .main__conditions__desc {
       width: 605px; }
       .main__conditions__desc__title {
-        font-family: 'Mont Light';
+        font-family: 'Proxima Nova Thin';
         font-weight: 200;
         font-size: 48px;
-        line-height: 61px; }
+        line-height: 61px;
+        color: #323638;
+        margin: 0 0 52px 0; }
+        .main__conditions__desc__title span {
+          font-family: 'Proxima Nova Thin';
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 61px;
+          color: #323638; }
+      .main__conditions__desc__text {
+        font-family: 'Proxima Nova Thin';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 31px;
+        color: #747474; }
     .main__conditions__picture {
       width: 859px; }
+  .main__offer-list {
+    width: 1472px;
+    margin: 0 auto; }
+    .main__offer-list__title {
+      font-family: 'Proxima Nova Thin';
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 61px;
+      margin: 0 auto;
+      width: 1160px;
+      color: #323638;
+      margin-bottom: 56px; }
+      .main__offer-list__title span {
+        font-family: 'Proxima Nova Thin';
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 61px; }
+    .main__offer-list__left {
+      width: 800px;
+      position: relative; }
+      .main__offer-list__left__image {
+        border-radius: 24px; }
+      .main__offer-list__left__image:nth-child(odd) {
+        margin-right: 24px; }
+      .main__offer-list__left__image:nth-child(1) {
+        margin-bottom: 24px; }
+      .main__offer-list__left__image:nth-child(2) {
+        margin-bottom: 24px; }
+      .main__offer-list__left .circle {
+        position: absolute;
+        top: 200px;
+        left: 190px;
+        background: white;
+        width: 204px;
+        height: 204px;
+        border-radius: 100px;
+        padding: 50px 0 0 30px; }
