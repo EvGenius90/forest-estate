@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  padding-top: 9px; }
+
+@font-face {
+  font-family: 'Mont Light';
+  src: local("Mont Light");
+  src: url("/src/fonts/Mont-Light.eot");
+  src: url("/src/fonts/Mont-Light.eot?#iefix") format("embedded-opentype"), url("/src/fonts/Mont-Light.woff") format("woff"), url("/src/fonts/Mont-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Mont Semibold';
+  src: local("Mont Semibold");
+  src: url("/src/fonts/Mont-SemiBold.eot");
+  src: url("/src/fonts/Mont-SemiBold.eot?#iefix") format("embedded-opentype"), url("/src/fonts/Mont-SemiBold.woff") format("woff"), url("/src/fonts/Mont-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Mont Extra Light';
+  src: local("Mont Extra Light");
+  src: url("/src/fonts/Mont-ExtraLight.eot");
+  src: url("/src/fonts/Mont-ExtraLight.eot?#iefix") format("embedded-opentype"), url("/src/fonts/Mont-ExtraLight.woff") format("woff"), url("/src/fonts/Mont-ExtraLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.header {
+  margin-bottom: 18px; }
+  .header .container {
+    max-width: 1744px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+  .header__logo-group {
+    display: flex;
+    align-items: center; }
+    .header__logo-group .logo {
+      margin-right: 12px; }
+  .header__group-text__txt {
+    margin-left: 40px; }
+  .header__navigation {
+    display: flex;
+    align-items: center; }
+    .header__navigation__list {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .header__navigation__list li {
+        margin-right: 68px;
+        font-family: Mont Semibold;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px; }
+        .header__navigation__list li a {
+          text-decoration: none;
+          color: black; }
+  .header__contacts {
+    display: flex;
+    align-items: center; }
+    .header__contacts .phone {
+      margin-right: 53px; }
+      .header__contacts .phone__text {
+        font-family: Mont Semibold;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        color: #1E1E1E9E; }
+      .header__contacts .phone__number {
+        font-family: Mont Semibold;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px; }
+    .header__contacts .order-call {
+      width: 289px;
+      height: 77px;
+      background: linear-gradient(0.25turn, #447C2A, #3DB846, #447C2A);
+      border-radius: 40px;
+      padding: 25px 0 0 70px;
+      color: white;
+      font-family: 'Mont Extra Light';
+      font-size: 20px;
+      line-height: 26px;
+      cursor: pointer; }
+
+.picture {
+  position: relative; }
+  .picture .container {
+    max-width: 1744px;
+    margin: 0 auto; }
+  .picture__image {
+    border-radius: 90px;
+    height: 751px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 78%; }
+  .picture__title {
+    position: absolute;
+    top: 176px;
+    left: 161px;
+    color: white;
+    width: 891px; }
+    .picture__title__subject {
+      font-family: 'Mont Light';
+      font-weight: 900;
+      font-size: 74px;
+      line-height: 89px; }
+    .picture__title__text {
+      font-family: 'Mont Light';
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 35px;
+      width: 400px; }
+  .picture__list {
+    position: absolute;
+    bottom: 60px;
+    left: 161px;
+    display: flex;
+    justify-content: space-between;
+    width: 1450px;
+    color: white;
+    font-family: 'Mont Light';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    list-style: none; }
+    .picture__list li {
+      width: 381px;
+      display: flex;
+      align-items: baseline; }
+    .picture__list__circle {
+      border-radius: 200%;
+      background: #71AB28;
+      width: 13px;
+      height: 13px;
+      margin-right: 22px; }
+
+.main {
+  position: relative; }
+  .main__fon-picture {
+    position: absolute;
+    right: 0; }
+  .main .container {
+    max-width: 1744px;
+    margin: 0 auto; }
+  .main__conditions {
+    display: flex;
+    justify-content: center; }
+    .main__conditions__desc {
+      width: 605px; }
+      .main__conditions__desc__title {
+        font-family: 'Mont Light';
+        font-weight: 200;
+        font-size: 48px;
+        line-height: 61px; }
+    .main__conditions__picture {
+      width: 859px; }
