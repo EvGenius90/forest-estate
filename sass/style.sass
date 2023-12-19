@@ -3,6 +3,7 @@
 
 body
     padding-top: 9px
+    background: #FFF0D957
 
 @font-face 
     font-family: 'Mont Light'
@@ -164,10 +165,11 @@ body
             
 
 .main
+    margin-bottom: 114px
     position: relative
     &__fon-picture
         position: absolute
-        top: 1100px
+        top: 1000px
         right: 0
     .container
         max-width: 1744px
@@ -203,6 +205,9 @@ body
     &__offer-list
         width: 1472px
         margin: 0 auto
+        &__flex
+            display: flex
+            align-items: center
         &__title
             font-family: 'Proxima Nova Thin'
             font-weight: 300
@@ -218,22 +223,139 @@ body
                 font-size: 48px
                 line-height: 61px
         &__left
-            width: 800px
+            width: 600px
             position: relative
+            margin-right: 43px
+            display: flex
+            &__lower
+                width: 280px
+                margin-top: 47px
+                margin-right: 24px
+            &__upper
+                width: 280px
             &__image
                 border-radius: 24px
-            &__image:nth-child(odd)
-                margin-right: 24px
             &__image:nth-child(1)
-                margin-bottom: 24px
-            &__image:nth-child(2)
                 margin-bottom: 24px
             .circle
                 position: absolute
-                top: 200px
+                top: 240px
                 left: 190px
                 background: white
                 width: 204px
                 height: 204px
                 border-radius: 100px
                 padding: 50px 0 0 30px
+        &__right
+            display: flex
+            .left-list
+                .list-width
+                    width: 400px
+                    margin-bottom: 80px
+                    margin-right: 47px
+                .service
+                    display: flex
+                .care
+                    display: flex
+                .house
+                    display: flex
+                .mini-circle
+                    background: white
+                    width: 52px
+                    height: 52px
+                    border: 1px solid #D1D1D1
+                    border-radius: 100px
+                    margin-right: 18px
+                    img
+                        padding: 20px 15px 10px 16px
+                .list__title
+                    font-family: 'Proxima Nova Thin'
+                    font-weight: 600
+                    font-size: 24px
+                    line-height: 31px
+                    margin-bottom: 22px
+                .list__text
+                    font-family: 'Proxima Nova Thin'
+                    font-weight: 600
+                    font-size: 16px
+                    line-height: 19px
+                    color: #747474
+            .right-list
+                .list-width
+                    width: 400px
+                    margin-bottom: 80px
+                .prices
+                    display: flex
+                .location
+                    display: flex
+                .environment
+                    display: flex
+                .mini-circle
+                    background: white
+                    width: 52px
+                    height: 52px
+                    border: 1px solid #D1D1D1
+                    border-radius: 100px
+                    margin-right: 18px
+                    img
+                        padding: 20px 15px 10px 16px
+                .list__title
+                    font-family: 'Proxima Nova Thin'
+                    font-weight: 600
+                    font-size: 24px
+                    line-height: 31px
+                    margin-bottom: 22px
+                .list__text
+                    font-family: 'Proxima Nova Thin'
+                    font-weight: 600
+                    font-size: 16px
+                    line-height: 19px
+                    color: #747474
+
+.block-carousel
+    // position: relative
+    .container
+        max-width: 1744px
+        margin: 0 auto
+    &__upper
+        display: flex
+        justify-content: center
+        margin-bottom: 56px
+        &__title
+            font-family: Mont Semibold
+            font-weight: 200
+            font-size: 48px
+            line-height: 61px
+            width: 730px
+            margin: 0 410px 0 0
+            // height: 95px
+            span
+                font-weight: 600
+        &__sign-up
+            width: 336px
+            height: 87px
+            background: linear-gradient(0.25turn, #447C2A, #3DB846, #447C2A)
+            border-radius: 50px
+            padding: 30px 0 0 55px
+            color: white
+            font-family: Mont Semibold
+            font-weight: 600
+            font-size: 20px
+            line-height: 26px
+    .ovw
+        width: 1416px
+        position: relative
+        overflow: hidden
+        margin: 0 auto
+    &__carousel
+        display: flex
+        margin: 0 auto
+        // position: absolute
+        // left: 0
+        &__image
+            width: 336px
+            height: 484px
+            border-radius: 24px
+        .carousel-active
+            margin: 0 24px
+            width: 696px
