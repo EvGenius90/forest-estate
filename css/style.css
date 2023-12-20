@@ -293,48 +293,112 @@ body {
         line-height: 19px;
         color: #747474; }
 
-.block-carousel .container {
-  max-width: 1744px;
-  margin: 0 auto; }
-
-.block-carousel__upper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 56px; }
-  .block-carousel__upper__title {
-    font-family: Mont Semibold;
-    font-weight: 200;
-    font-size: 48px;
-    line-height: 61px;
-    width: 730px;
-    margin: 0 410px 0 0; }
-    .block-carousel__upper__title span {
-      font-weight: 600; }
-  .block-carousel__upper__sign-up {
-    width: 336px;
-    height: 87px;
-    background: linear-gradient(0.25turn, #447C2A, #3DB846, #447C2A);
-    border-radius: 50px;
-    padding: 30px 0 0 55px;
-    color: white;
-    font-family: Mont Semibold;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 26px; }
-
-.block-carousel .ovw {
-  width: 1416px;
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto; }
-
-.block-carousel__carousel {
-  display: flex;
-  margin: 0 auto; }
-  .block-carousel__carousel__image {
-    width: 336px;
+.block-carousel {
+  position: relative; }
+  .block-carousel .container {
+    max-width: 1744px;
+    margin: 0 auto; }
+  .block-carousel__upper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px; }
+    .block-carousel__upper__title {
+      font-family: Mont Semibold;
+      font-weight: 200;
+      font-size: 48px;
+      line-height: 61px;
+      width: 730px;
+      margin: 0 410px 0 0; }
+      .block-carousel__upper__title span {
+        font-weight: 600; }
+    .block-carousel__upper__sign-up {
+      width: 336px;
+      height: 87px;
+      background: linear-gradient(0.25turn, #447C2A, #3DB846, #447C2A);
+      border-radius: 50px;
+      padding: 30px 0 0 55px;
+      color: white;
+      font-family: Mont Semibold;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 26px;
+      cursor: pointer; }
+  .block-carousel .btn-left {
+    width: 68px;
+    height: 68px;
+    background: white;
+    position: absolute;
+    top: 400px;
+    left: 205px;
+    border-radius: 40px;
+    cursor: pointer; }
+    .block-carousel .btn-left__upper {
+      position: absolute;
+      top: 30px;
+      left: 23px;
+      width: 15px;
+      border: 1px solid #869EA9;
+      transform: rotate(-40deg); }
+    .block-carousel .btn-left__lower {
+      position: absolute;
+      top: 39px;
+      left: 23px;
+      width: 15px;
+      border: 1px solid #869EA9;
+      transform: rotate(40deg); }
+  .block-carousel .btn-left:hover {
+    background: #3C9C43; }
+    .block-carousel .btn-left:hover .btn-left__upper {
+      border: 1px solid white; }
+    .block-carousel .btn-left:hover .btn-left__lower {
+      border: 1px solid white; }
+  .block-carousel .btn-right {
+    width: 68px;
+    height: 68px;
+    background: white;
+    position: absolute;
+    top: 400px;
+    right: 205px;
+    border-radius: 40px;
+    cursor: pointer; }
+    .block-carousel .btn-right__upper {
+      position: absolute;
+      top: 30px;
+      left: 28px;
+      width: 15px;
+      border: 1px solid #869EA9;
+      transform: rotate(40deg); }
+    .block-carousel .btn-right__lower {
+      position: absolute;
+      top: 39px;
+      left: 28px;
+      width: 15px;
+      border: 1px solid #869EA9;
+      transform: rotate(-40deg); }
+  .block-carousel .btn-right:hover {
+    background: #3C9C43; }
+    .block-carousel .btn-right:hover .btn-right__upper {
+      border: 1px solid white; }
+    .block-carousel .btn-right:hover .btn-right__lower {
+      border: 1px solid white; }
+  .block-carousel .ovw {
+    width: 1413px;
     height: 484px;
-    border-radius: 24px; }
-  .block-carousel__carousel .carousel-active {
-    margin: 0 24px;
-    width: 696px; }
+    overflow: hidden;
+    margin: 0 auto; }
+  .block-carousel__carousel {
+    display: flex;
+    margin: 0 auto;
+    width: 1416px;
+    transition: all 1s; }
+    .block-carousel__carousel__image {
+      width: 336px;
+      height: 484px;
+      border-radius: 24px;
+      transition: all 1s; }
+    .block-carousel__carousel .carousel-active {
+      margin: 0 24px;
+      width: 696px; }
+
+.ww {
+  width: 0; }
