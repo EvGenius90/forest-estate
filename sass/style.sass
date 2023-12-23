@@ -202,6 +202,8 @@ body
                 color: #747474
         &__picture
             width: 859px
+            img
+                mix-blend-mode: darken
     &__offer-list
         width: 1472px
         margin: 0 auto
@@ -314,6 +316,7 @@ body
 
 .block-carousel
     position: relative
+    margin-bottom: 56px
     // overflow: hidden
     .container
         max-width: 1744px
@@ -349,8 +352,8 @@ body
         height: 68px
         background: white
         position: absolute
-        top: 400px
-        left: 205px
+        top: 210px
+        left: -35px
         border-radius: 40px
         cursor: pointer
         // position: absolute
@@ -380,8 +383,8 @@ body
             height: 68px
             background: white
             position: absolute
-            top: 400px
-            right: 205px
+            top: 210px
+            right: -45px
             border-radius: 40px
             cursor: pointer
             &__upper
@@ -407,9 +410,11 @@ body
     .ovw
         width: 1413px
         height: 484px
+        position: relative
         // position: relative
-        overflow: hidden
+        // overflow: hidden
         margin: 0 auto
+        margin-bottom: 27px
         // .btn-left
         //     width: 68px
         //     height: 68px
@@ -470,25 +475,320 @@ body
         //         border: 1px solid white
         //     .btn-right__lower
         //         border: 1px solid white
+        &__subject
+            font-family: Mont Semibold
+            font-weight: 400
+            font-size: 30px
+            line-height: 37px
+            width: 325px
+            margin: 0 auto
+            margin-bottom: 32px
+    &__indicators
+        display: flex
+        justify-content: center
+        .indicators__circle
+            width: 8px
+            height: 8px
+            background: #B9B9B9
+            border-radius: 10px
+        .indicators__circle:not(:last-child)
+            margin-right: 12px
     &__carousel
         display: flex
         margin: 0 auto
-        // overflow: hidden
-        // position: absolute
-        // left: 0
-        width: 1416px
-        transition: all 1s
+        overflow: hidden
+        width: 1413px
         &__image
             width: 336px
             height: 484px
             border-radius: 24px
             transition: all 1s
-
         .carousel-active
             margin: 0 24px
             width: 696px
-        
+    
 .ww
     width: 0
 
-        
+.block-video
+    margin-bottom: 112px
+    .container
+        max-width: 1744px
+        margin: 0 auto
+        video
+            display: block
+            margin: 0 auto
+            width: 1066px
+            height: 600px
+            border-radius: 24px
+
+.benefits
+    background: white
+    .container
+        max-width: 1744px
+        margin: 0 auto
+    &__title
+        font-family: Mont Semibold
+        font-weight: 400
+        font-size: 48px
+        line-height: 61px
+        width: 1122px
+        margin: 0 auto
+        margin-bottom: 56px
+        span
+            font-family: Mont Semibold
+            font-weight: 600
+            font-size: 48px
+            line-height: 61px
+    &__promo
+        display: flex
+        justify-content: center
+        border: 1px solid #DEDEDE
+        border-radius: 24px
+        max-width: 1440px
+        margin: 0 auto
+        padding: 50px
+        margin-bottom: 42px
+        &__left
+            margin-right: 68px
+            .programm
+                font-family: Proxima Nova Thin
+                font-weight: 400
+                font-size: 19px
+                line-height: 23px
+                color: #464646
+            .headline-btn
+                display: flex
+                justify-content: space-between
+                .headline
+                    font-family: Mont Semibold
+                    font-weight: 700
+                    font-size: 64px
+                    line-height: 73px
+                    color: #323638
+                .btn
+                    background: linear-gradient(0.25turn,#447C2A, #3DB846, #447C2A)
+                    width: 200px
+                    border-radius: 40px
+                    padding: 22px 0 0 35px
+                    font-family: Mont Semibold
+                    font-weight: 600
+                    font-size: 20px
+                    line-height: 26px
+                    color: white
+            .subtitle
+                font-family: Proxima Nova Thin
+                font-weight: 400
+                font-size: 19px
+                line-height: 23px
+                color: #464646
+                margin-bottom: 21px
+            &__list
+                ul
+                    list-style: none
+                    margin: 0
+                    padding: 0
+                    li
+                        margin-bottom: 20px
+                    li:before
+                        content: 'o'
+                        color: green
+            &__block-price
+                padding: 30px
+                background: #FFFAF2
+                border-radius: 24px
+                .block-price__heading
+                    .info
+                        display: flex
+                        justify-content: space-between
+                        margin-bottom: 16px
+                        &__block-text
+                            display: flex
+                            width: 370px
+                        &__caption
+                            width: 185px
+                        &__price
+                            font-family: Mont Semibold
+                            font-weight: 400
+                            font-size: 28px
+                            line-height: 31px
+                            color: #437F2C
+                            span
+                                font-family: Proxima Nova Thin
+                                font-weight: 400
+                                font-size: 20px
+                                line-height: 23px
+                        &__caption
+                            font-family: Mont Semibold
+                            font-weight: 400
+                            font-size: 24px
+                            line-height: 31px
+                            color: #464646
+                        hr
+                            height: 22px
+                            border: 1px solid #CACACA
+                        .block-price__close
+                            width: 46px
+                            height: 46px
+                            background: white
+                            border-radius: 20px
+                            position: relative
+                            cursor: pointer
+                            transition: 1s
+                            // transform: rotate(0deg)
+                            &__horizontal
+                                width: 12px
+                                height: 2px
+                                background: #455858
+                                position: absolute
+                                top: 47%
+                                left: 40%
+                                // transform: translateX(-50%)
+                            &__vertical
+                                width: 2px
+                                background: #455858
+                                height: 12px
+                                position: absolute
+                                top: 50%
+                                left: 50%
+                                transform: translateY(-50%)
+                .desc
+                    height: 0
+                    overflow: hidden
+                    transition: height .6s 
+                .desc__height
+                    height: 45px
+                    .desc__info
+                        display: flex
+                        .desc__plus
+                            position: relative
+                            width: 13px
+                            height: 24px
+                            margin-right: 16px
+                            .horizontal
+                                width: 12px
+                                height: 2px
+                                background: #71AB28
+                                position: absolute
+                                top: 8.5px
+                                left: 1px
+                            .vertical
+                                width: 2px
+                                height: 12px
+                                background: #71AB28
+                                position: absolute
+                                top: 4px
+                                left: 6px
+                                transform: rotate(15deg)
+                    .desc__text
+                        font-family: Proxima Nova Thin
+                        font-weight: 600
+                        font-size: 14px
+                        line-height: 21px
+                        color: #464646
+
+.block-slider
+    .container
+        max-width: 1744px
+        margin: 0 auto
+    &__title
+        font-family: Proxima Nova Thin
+        font-weight: 400
+        font-size: 48px
+        line-height: 51px
+        margin: 0 auto
+        text-align: center
+        margin-bottom: 56px
+        span
+            font-family: Proxima Nova Thin
+            font-weight: 600
+            font-size: 48px
+            line-height: 51px
+    &__slider
+        .wrap
+            width: 1413px
+            height: 600px
+            overflow: hidden
+            margin: 0 auto
+            display: flex
+            align-items: flex-end
+            position: relative
+            .block-image:not(:last-child)
+                margin-right: 145px
+            .img-active
+                height: 580px
+            .ee
+                display: none
+            .block-image
+                text-align: center
+                transition: all 1s
+                &__img
+                    margin-bottom: 18px
+                &__title
+                    margin: 0 0 10px 0
+                &__doctor
+                    margin-bottom: 10px
+                &__experience
+                    margin-bottom: 10px
+            &__navigation
+                &__left:hover
+                    background: #3C9C43
+                    .wrap__navigation__left__upper
+                        background: white
+                    .wrap__navigation__left__lower
+                        background: white
+                &__left
+                    width: 44px
+                    height: 44px
+                    background: #F4F4F4
+                    position: absolute
+                    top: 190px
+                    left: 480px
+                    border-radius: 20px
+                    &__upper
+                        width: 17px
+                        height: 1px
+                        background: black
+                        position: absolute
+                        top: 18px
+                        left: 10px
+                        transform: rotate(-45deg)
+                    &__lower
+                        width: 17px
+                        height: 1px
+                        background: black
+                        position: absolute
+                        top: 30px
+                        left: 10px
+                        transform: rotate(45deg)
+                &__right:hover
+                    background: #3C9C43
+                    .wrap__navigation__right__upper
+                        background: white
+                    .wrap__navigation__right__lower
+                        background: white
+                &__right
+                    width: 44px
+                    height: 44px
+                    background: #F4F4F4
+                    position: absolute
+                    top: 190px
+                    left: 840px
+                    border-radius: 20px
+                    &__upper
+                        width: 17px
+                        height: 1px
+                        background: black
+                        position: absolute
+                        top: 18px
+                        left: 14px
+                        transform: rotate(45deg)
+                    &__lower
+                        width: 17px
+                        height: 1px
+                        background: black
+                        position: absolute
+                        top: 30px
+                        left: 14px
+                        transform: rotate(-45deg)
+
