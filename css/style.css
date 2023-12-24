@@ -400,19 +400,30 @@ body {
       margin-bottom: 32px; }
   .block-carousel__indicators {
     display: flex;
-    justify-content: center; }
+    align-items: center;
+    width: 70px;
+    overflow: hidden;
+    margin: 0 auto; }
     .block-carousel__indicators .indicators__circle {
-      width: 8px;
-      height: 8px;
+      min-width: 4px;
+      height: 4px;
       background: #B9B9B9;
       border-radius: 10px; }
+    .block-carousel__indicators .circle-active {
+      min-width: 8px;
+      height: 8px;
+      background: #71AB28; }
+    .block-carousel__indicators .circle-average-active {
+      min-width: 6px;
+      height: 6px; }
     .block-carousel__indicators .indicators__circle:not(:last-child) {
       margin-right: 12px; }
   .block-carousel__carousel {
     display: flex;
     margin: 0 auto;
     overflow: hidden;
-    width: 1413px; }
+    width: 1413px;
+    position: relative; }
     .block-carousel__carousel__image {
       width: 336px;
       height: 484px;
@@ -598,106 +609,144 @@ body {
             line-height: 21px;
             color: #464646; }
 
-.block-slider .container {
-  max-width: 1744px;
-  margin: 0 auto; }
-
-.block-slider__title {
-  font-family: Proxima Nova Thin;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 51px;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 56px; }
-  .block-slider__title span {
+.block-slider {
+  margin-bottom: 72px; }
+  .block-slider .container {
+    max-width: 1744px;
+    margin: 0 auto; }
+  .block-slider__title {
     font-family: Proxima Nova Thin;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 48px;
-    line-height: 51px; }
-
-.block-slider__slider .wrap {
-  width: 1413px;
-  height: 600px;
-  overflow: hidden;
-  margin: 0 auto;
-  display: flex;
-  align-items: flex-end;
-  position: relative; }
-  .block-slider__slider .wrap .block-image:not(:last-child) {
-    margin-right: 145px; }
-  .block-slider__slider .wrap .img-active {
-    height: 580px; }
-  .block-slider__slider .wrap .ee {
-    display: none; }
-  .block-slider__slider .wrap .block-image {
+    line-height: 51px;
+    margin: 0 auto;
     text-align: center;
-    transition: all 1s; }
-    .block-slider__slider .wrap .block-image__img {
-      margin-bottom: 18px; }
-    .block-slider__slider .wrap .block-image__title {
-      margin: 0 0 10px 0; }
-    .block-slider__slider .wrap .block-image__doctor {
-      margin-bottom: 10px; }
-    .block-slider__slider .wrap .block-image__experience {
-      margin-bottom: 10px; }
-  .block-slider__slider .wrap__navigation__left:hover {
-    background: #3C9C43; }
-    .block-slider__slider .wrap__navigation__left:hover .wrap__navigation__left__upper {
-      background: white; }
-    .block-slider__slider .wrap__navigation__left:hover .wrap__navigation__left__lower {
-      background: white; }
-  .block-slider__slider .wrap__navigation__left {
-    width: 44px;
-    height: 44px;
-    background: #F4F4F4;
+    margin-bottom: 56px; }
+    .block-slider__title span {
+      font-family: Proxima Nova Thin;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 51px; }
+  .block-slider__slider .wrap {
+    width: 1413px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    position: relative; }
+    .block-slider__slider .wrap .block-image:not(:last-child) {
+      margin-right: 145px; }
+    .block-slider__slider .wrap .img-active {
+      height: 580px; }
+    .block-slider__slider .wrap .ee {
+      display: none; }
+    .block-slider__slider .wrap .block-image {
+      text-align: center;
+      transition: all 1s; }
+      .block-slider__slider .wrap .block-image__img {
+        margin-bottom: 18px; }
+      .block-slider__slider .wrap .block-image__title {
+        margin: 0 0 10px 0; }
+      .block-slider__slider .wrap .block-image__doctor {
+        margin-bottom: 10px; }
+      .block-slider__slider .wrap .block-image__experience {
+        margin-bottom: 10px; }
+    .block-slider__slider .wrap__navigation__left:hover {
+      background: #3C9C43; }
+      .block-slider__slider .wrap__navigation__left:hover .wrap__navigation__left__upper {
+        background: white; }
+      .block-slider__slider .wrap__navigation__left:hover .wrap__navigation__left__lower {
+        background: white; }
+    .block-slider__slider .wrap__navigation__left {
+      width: 44px;
+      height: 44px;
+      background: #F4F4F4;
+      position: absolute;
+      top: 190px;
+      left: 480px;
+      border-radius: 20px; }
+      .block-slider__slider .wrap__navigation__left__upper {
+        width: 17px;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 18px;
+        left: 10px;
+        transform: rotate(-45deg); }
+      .block-slider__slider .wrap__navigation__left__lower {
+        width: 17px;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 30px;
+        left: 10px;
+        transform: rotate(45deg); }
+    .block-slider__slider .wrap__navigation__right:hover {
+      background: #3C9C43; }
+      .block-slider__slider .wrap__navigation__right:hover .wrap__navigation__right__upper {
+        background: white; }
+      .block-slider__slider .wrap__navigation__right:hover .wrap__navigation__right__lower {
+        background: white; }
+    .block-slider__slider .wrap__navigation__right {
+      width: 44px;
+      height: 44px;
+      background: #F4F4F4;
+      position: absolute;
+      top: 190px;
+      left: 840px;
+      border-radius: 20px; }
+      .block-slider__slider .wrap__navigation__right__upper {
+        width: 17px;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 18px;
+        left: 14px;
+        transform: rotate(45deg); }
+      .block-slider__slider .wrap__navigation__right__lower {
+        width: 17px;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 30px;
+        left: 14px;
+        transform: rotate(-45deg); }
+
+.block-map {
+  position: relative; }
+  .block-map__fon {
     position: absolute;
-    top: 190px;
-    left: 480px;
-    border-radius: 20px; }
-    .block-slider__slider .wrap__navigation__left__upper {
-      width: 17px;
-      height: 1px;
-      background: black;
-      position: absolute;
-      top: 18px;
-      left: 10px;
-      transform: rotate(-45deg); }
-    .block-slider__slider .wrap__navigation__left__lower {
-      width: 17px;
-      height: 1px;
-      background: black;
-      position: absolute;
-      top: 30px;
-      left: 10px;
-      transform: rotate(45deg); }
-  .block-slider__slider .wrap__navigation__right:hover {
-    background: #3C9C43; }
-    .block-slider__slider .wrap__navigation__right:hover .wrap__navigation__right__upper {
-      background: white; }
-    .block-slider__slider .wrap__navigation__right:hover .wrap__navigation__right__lower {
-      background: white; }
-  .block-slider__slider .wrap__navigation__right {
-    width: 44px;
-    height: 44px;
-    background: #F4F4F4;
+    top: -300px;
+    left: -50px;
+    z-index: -1; }
+  .block-map .container {
+    max-width: 1744px;
+    margin: 0 auto; }
+  .block-map__map {
+    padding: 130px;
+    margin: 0 auto; }
+    .block-map__map__img {
+      width: 100%;
+      height: 683px; }
+  .block-map__block-form {
+    background: #FCFCFC;
+    width: 828px;
+    height: 605px;
     position: absolute;
-    top: 190px;
-    left: 840px;
-    border-radius: 20px; }
-    .block-slider__slider .wrap__navigation__right__upper {
-      width: 17px;
-      height: 1px;
-      background: black;
-      position: absolute;
-      top: 18px;
-      left: 14px;
-      transform: rotate(45deg); }
-    .block-slider__slider .wrap__navigation__right__lower {
-      width: 17px;
-      height: 1px;
-      background: black;
-      position: absolute;
-      top: 30px;
-      left: 14px;
-      transform: rotate(-45deg); }
+    top: 170px;
+    left: 250px; }
+    .block-map__block-form__title {
+      font-family: Proxima Nova Thin;
+      font-weight: 600;
+      font-size: 39px;
+      line-height: 50px;
+      width: 460px;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 50px; }
+      .block-map__block-form__title span {
+        font-family: Proxima Nova Thin;
+        font-weight: 400;
+        font-size: 39px;
+        line-height: 50px; }

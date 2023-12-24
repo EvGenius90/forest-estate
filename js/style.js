@@ -1,37 +1,49 @@
 'use strict'
 
 const image = document.querySelectorAll('.block-carousel__carousel__image')
-const carousel = document.querySelector('.block-carousel__carousel')
-const carouselActive = document.querySelector('.carousel-active')
+const cicrle = document.querySelectorAll('.indicators__circle')
 
-// let offset = 0
+let offset = 0
 let num = 1
 
 document.querySelector('.btn-right').addEventListener('click', _=>{
     ++num
 
-    // if(num <= image.length){
-        image[num].classList.add('carousel-active')
+    // cicrle[num - 1].classList.remove('circle-active')
+
+    if(num < image.length){
         image[num - 1].classList.remove('carousel-active')
+        image[num].classList.add('carousel-active')
         image[num - 2].classList.add('ww')
-    // }
-    // else{
-    //     num = image.length
-    // }
-    // console.log(num)
-    // image[num].classList.add('carousel-active')
-    // image[num - 1].classList.remove('carousel-active')
-    // // image[num - 2].style.width = 0 + 'px'
-    // image[num - 2].classList.add('ww')
+
+        cicrle[num - 2].classList.remove('circle-active')
+        cicrle[num - 2].classList.add('circle-average-active')
+        cicrle[num - 1].classList.remove('circle-average-active')
+        cicrle[num - 1].classList.add('circle-active')
+        cicrle[num].classList.add('circle-average-active')
+        cicrle[num - 3].classList.remove('circle-average-active')
+        console.log(cicrle[num])
+    }
+
+    if(num >= image.length){
+        --num
+    }
     
 })
 
 document.querySelector('.btn-left').addEventListener('click', _=>{
     --num
 
-        image[num].classList.add('carousel-active')
-        image[num + 1].classList.remove('carousel-active')
-        image[num - 1].classList.remove('ww')
+        if(num >= 1){
+            image[num].classList.add('carousel-active')
+            image[num + 1].classList.remove('carousel-active')
+            image[num - 1].classList.remove('ww')
+        }
+
+        if(num <= 0){
+            ++num
+        }
+        
 })
 
 
@@ -131,20 +143,25 @@ document.querySelector('.wrap__navigation__right').addEventListener('click', _=>
         sliderImg[count - 1].classList.remove('img-active')
         sliderImg[count - 2].classList.add('ee')
         sliderImg[count].classList.add('img-active')
-
     }
 
+    if(count >= sliderImg.length){
+        --count
+    }
 })
 
 document.querySelector('.wrap__navigation__left').addEventListener('click', _=>{
     --count
 
-    if(count >= 0){
+    if(count >= 1){
 
         sliderImg[count].classList.add('img-active')
         sliderImg[count + 1].classList.remove('img-active')
         sliderImg[count - 1].classList.remove('ee')
-        
+    }
+
+    if(count <= 0){
+        ++count
     }
 
 })
