@@ -469,23 +469,57 @@
                     </div>
                     <form class="form" action="">
                         <div class="input-date">
-                            <div class="input-date__titlw">
-                                Заполните форму и мы вам перезвоним
+                            <div class="input-date__title">
+                                Заполните форму <br> и мы вам перезвоним
                             </div>
-                            <input type="text" name="text">
-                            <input type="text" name="phone">
-                            <button>Записаться на экскурсию</button>
-                            <p>Вы соглашаетесь с условиями обработки персональных данных</p>
+                            <input class="form__name" type="text" name="text" placeholder="Имя">
+                            <input class="form__phone" type="tel" name="phone" placeholder="Номер телефона">
+                            <button class="form__button">Записаться на экскурсию</button>
+                            <div class="form__box">
+                                <input class="form__checkbox" type="checkbox" id="conditions">
+                                <label class="form__label" for="conditions">Вы соглашаетесь с <a href="#">условиями обработки персональных данных</a></label>
+                            </div>
                         </div>
+                        <hr class="form__hr">
                         <div class="phone-socials">
-
+                            <div class="phone-socials__title">
+                                Или позвоните нам по телефону
+                            </div>
+                            <div class="phone-socials__numbers">
+                                <div class="number">
+                                    <img src="img/Vector1.png" alt="">
+                                    <p>+7 (495)<span>797-77-35</span></p>
+                                </div>
+                                <div class="work-schedule">
+                                    <div class="work-schedule__circles">
+                                        <div class="circle-upper">
+                                            <div class="circle-lower"></div>
+                                        </div>
+                                        
+                                        <p>Звоните, Пн-Пт с 9:00-18:00</p>
+                                    </div>
+                                </div>
+                                <hr class="phone-socials__hr">
+                                <p class="phone-socials__read-online">Пишите онлайн</p>
+                                <div class="socials">
+                                    <i class="fa-brands fa-viber"></i>
+                                    <i class="fa-brands fa-telegram"></i>
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
+                <div class="block-map__point-map">
+                    <img src="img/Иконка.png" alt="">
+                </div>
             </div>
+            
         </div>
+        
     </div>
 
     <script src="js/style.js"></script>
+    <script src="https://kit.fontawesome.com/094e0b81b0.js" crossorigin="anonymous"></script>
 </body>
 </html>

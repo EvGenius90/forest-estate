@@ -735,7 +735,9 @@ body {
     height: 605px;
     position: absolute;
     top: 170px;
-    left: 250px; }
+    left: 250px;
+    border-radius: 24px;
+    padding: 50px; }
     .block-map__block-form__title {
       font-family: Proxima Nova Thin;
       font-weight: 600;
@@ -750,3 +752,140 @@ body {
         font-weight: 400;
         font-size: 39px;
         line-height: 50px; }
+    .block-map__block-form .form {
+      display: flex; }
+      .block-map__block-form .form .input-date__title {
+        font-family: Proxima Nova Thin;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 29px;
+        margin-bottom: 24px;
+        text-align: center;
+        width: 343px; }
+      .block-map__block-form .form__name {
+        display: block;
+        width: 310px;
+        height: 55px;
+        background: #EFEFEF;
+        border-radius: 34px;
+        padding: 0 0 0 37px;
+        margin-bottom: 24px;
+        border: 0;
+        border-top: inset; }
+      .block-map__block-form .form__phone {
+        display: block;
+        width: 310px;
+        height: 55px;
+        background: #EFEFEF;
+        border-radius: 34px;
+        padding: 0 0 0 37px;
+        margin-bottom: 24px;
+        border: 0;
+        border-top: inset; }
+      .block-map__block-form .form__button {
+        display: block;
+        width: 310px;
+        height: 55px;
+        background: linear-gradient(0.25turn, #447C2A, #3DB846, #447C2A);
+        border-radius: 50px;
+        border: 0;
+        font-family: Proxima Nova Thin;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: white;
+        transition: 0.5s;
+        margin-bottom: 22px; }
+      .block-map__block-form .form__button:hover {
+        filter: drop-shadow(-6px 15px 5px #2A7C3057);
+        cursor: pointer; }
+      .block-map__block-form .form__hr {
+        height: 369px;
+        margin: 0 64px;
+        border: solid 1px #E1E1E1; }
+      .block-map__block-form .form__box {
+        display: flex;
+        align-items: center;
+        width: 250px; }
+      .block-map__block-form .form__checkbox {
+        margin-right: 8px; }
+      .block-map__block-form .form__label a {
+        color: #323638; }
+      .block-map__block-form .form .phone-socials__title {
+        font-family: Proxima Nova Thin;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 29px;
+        text-wrap: balance;
+        text-align: center;
+        margin-bottom: 44px; }
+      .block-map__block-form .form .phone-socials__numbers .number {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center; }
+        .block-map__block-form .form .phone-socials__numbers .number img {
+          margin-right: 12px;
+          width: 18px;
+          height: 18px; }
+        .block-map__block-form .form .phone-socials__numbers .number p {
+          font-family: Proxima Nova Thin;
+          font-weight: 600;
+          font-size: 25px;
+          line-height: 30px;
+          color: #323638; }
+          .block-map__block-form .form .phone-socials__numbers .number p span {
+            font-weight: 400; }
+      .block-map__block-form .form .phone-socials__numbers .work-schedule {
+        margin-bottom: 30px; }
+        .block-map__block-form .form .phone-socials__numbers .work-schedule__circles {
+          display: flex;
+          align-items: center; }
+          .block-map__block-form .form .phone-socials__numbers .work-schedule__circles .circle-upper {
+            width: 10px;
+            height: 10px;
+            background: #71AB2882;
+            border-radius: 10px;
+            padding: 2px;
+            margin-right: 9px; }
+            .block-map__block-form .form .phone-socials__numbers .work-schedule__circles .circle-upper .circle-lower {
+              width: 6px;
+              height: 6px;
+              background: #71AB28;
+              border-radius: 10px; }
+      .block-map__block-form .form .phone-socials__hr {
+        margin-bottom: 30px; }
+      .block-map__block-form .form .phone-socials__read-online {
+        font-family: Proxima Nova Thin;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 30px;
+        color: #323638;
+        margin-bottom: 20px;
+        text-align: center; }
+      .block-map__block-form .form .phone-socials .socials {
+        text-align: center; }
+        .block-map__block-form .form .phone-socials .socials .fa-brands {
+          font-size: 25px;
+          width: 54px;
+          height: 54px;
+          padding: 15px;
+          color: white;
+          border-radius: 30px;
+          cursor: pointer; }
+        .block-map__block-form .form .phone-socials .socials .fa-brands:not(:last-child) {
+          margin-right: 9px; }
+        .block-map__block-form .form .phone-socials .socials .fa-viber {
+          background: #64569E; }
+        .block-map__block-form .form .phone-socials .socials .fa-telegram {
+          background: #00BBF0; }
+        .block-map__block-form .form .phone-socials .socials .fa-whatsapp {
+          background: #00AC10; }
+  .block-map__point-map {
+    width: 150px;
+    height: 187px;
+    background: white;
+    position: absolute;
+    top: 500px;
+    right: 30%;
+    border-bottom-left-radius: 75px 120px;
+    border-bottom-right-radius: 75px 120px; }

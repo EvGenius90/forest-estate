@@ -768,6 +768,8 @@ body
         position: absolute
         top: 170px
         left: 250px
+        border-radius: 24px
+        padding: 50px
         &__title
             font-family: Proxima Nova Thin
             font-weight: 600
@@ -783,4 +785,151 @@ body
                 font-size: 39px
                 line-height: 50px
         .form
-            
+            // padding: 55px
+            display: flex
+            .input-date
+
+                &__title
+                    font-family: Proxima Nova Thin
+                    font-weight: 600
+                    font-size: 23px
+                    line-height: 29px
+                    margin-bottom: 24px
+                    text-align: center
+                    width: 343px
+                    // text-wrap: balance
+                    // text-wrap: pretty
+            &__name
+                display: block
+                width: 310px
+                height: 55px
+                background: #EFEFEF
+                border-radius: 34px
+                padding: 0 0 0 37px
+                margin-bottom: 24px
+                border: 0
+                border-top: inset
+            &__phone
+                display: block
+                width: 310px
+                height: 55px
+                background: #EFEFEF
+                border-radius: 34px
+                padding: 0 0 0 37px
+                margin-bottom: 24px
+                border: 0
+                border-top: inset
+            &__button
+                display: block
+                width: 310px
+                height: 55px
+                background: linear-gradient(0.25turn,#447C2A, #3DB846, #447C2A)
+                border-radius: 50px
+                border: 0
+                font-family: Proxima Nova Thin
+                font-weight: 400
+                font-size: 20px
+                line-height: 24px
+                color: white
+                transition: 0.5s
+                margin-bottom: 22px
+            &__button:hover
+                filter: drop-shadow(-6px 15px 5px #2A7C3057)
+                cursor: pointer
+            &__hr
+                height: 369px
+                margin: 0 64px
+                border: solid 1px #E1E1E1
+            &__box
+                display: flex
+                align-items: center
+                width: 250px
+            &__checkbox
+                margin-right: 8px
+                // background: green
+                // color: green
+            &__label
+                a
+                    color: #323638
+            .phone-socials
+                &__title
+                    font-family: Proxima Nova Thin
+                    font-weight: 600
+                    font-size: 23px
+                    line-height: 29px
+                    text-wrap: balance
+                    text-align: center
+                    margin-bottom: 44px
+                &__numbers
+                    .number
+                        display: flex
+                        margin-bottom: 20px
+                        align-items: center
+                        img
+                            margin-right: 12px
+                            width: 18px
+                            height: 18px
+                        p
+                            font-family: Proxima Nova Thin
+                            font-weight: 600
+                            font-size: 25px
+                            line-height: 30px
+                            color: #323638
+                            span
+                                font-weight: 400
+                    .work-schedule
+                        margin-bottom: 30px
+                        &__circles
+                            display: flex
+                            align-items: center
+                            .circle-upper
+                                width: 10px
+                                height: 10px
+                                background: #71AB2882
+                                border-radius: 10px
+                                padding: 2px
+                                margin-right: 9px
+                                .circle-lower
+                                    width: 6px
+                                    height: 6px
+                                    background: #71AB28
+                                    border-radius: 10px
+                &__hr
+                    margin-bottom: 30px 
+                &__read-online
+                    font-family: Proxima Nova Thin
+                    font-weight: 600
+                    font-size: 23px
+                    line-height: 30px
+                    color: #323638
+                    margin-bottom: 20px
+                    text-align: center
+                .socials
+                    text-align: center
+                    .fa-brands
+                        font-size: 25px
+                        width: 54px
+                        height: 54px
+                        padding: 15px
+                        color: white
+                        border-radius: 30px
+                        cursor: pointer
+                    .fa-brands:not(:last-child)
+                        margin-right: 9px
+                    .fa-viber
+                        background: #64569E
+                    .fa-telegram
+                        background: #00BBF0
+                    .fa-whatsapp
+                        background: #00AC10
+    &__point-map
+        width: 150px
+        height: 187px
+        background: white
+        position: absolute
+        top: 500px
+        right: 30%
+        border-bottom-left-radius: 75px 120px
+        border-bottom-right-radius: 75px 120px
+                        
+
