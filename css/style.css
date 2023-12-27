@@ -714,7 +714,8 @@ body {
         transform: rotate(-45deg); }
 
 .block-map {
-  position: relative; }
+  position: relative;
+  margin-bottom: 120px; }
   .block-map__fon {
     position: absolute;
     top: -300px;
@@ -881,11 +882,58 @@ body {
         .block-map__block-form .form .phone-socials .socials .fa-whatsapp {
           background: #00AC10; }
   .block-map__point-map {
-    width: 150px;
-    height: 187px;
-    background: white;
     position: absolute;
-    top: 500px;
-    right: 30%;
-    border-bottom-left-radius: 75px 120px;
-    border-bottom-right-radius: 75px 120px; }
+    top: 430px;
+    right: 25%; }
+    .block-map__point-map svg {
+      position: relative;
+      z-index: 1; }
+    .block-map__point-map__addres {
+      background: white;
+      width: 326px;
+      height: 126px;
+      border-radius: 24px;
+      position: absolute;
+      top: 150px;
+      left: 100px;
+      text-align: center;
+      padding: 22px; }
+      .block-map__point-map__addres__title {
+        font-family: Proxima Nova Thin;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 24px;
+        color: #323638;
+        margin-bottom: 15px; }
+      .block-map__point-map__addres__text {
+        font-family: Proxima Nova Thin;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #777777; }
+
+.footer .container {
+  max-width: 1744px;
+  margin: 0 auto; }
+
+.footer__upper {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around; }
+
+.footer__box-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 250px; }
+  .footer__box-logo img {
+    margin-right: 63px; }
+  .footer__box-logo p {
+    width: 200px; }
+
+.footer__navigation ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none; }
+  .footer__navigation ul li:not(:last-child) {
+    margin-right: 90px; }
