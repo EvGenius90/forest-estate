@@ -608,8 +608,12 @@ body
                     height: 0
                     overflow: hidden
                     transition: height .6s 
-                .desc__height
-                    height: 45px
+                    .desc__text
+                        font-family: Proxima Nova Thin
+                        font-weight: 600
+                        font-size: 14px
+                        line-height: 21px
+                        color: #464646
                     .desc__info
                         display: flex
                         .desc__plus
@@ -632,12 +636,8 @@ body
                                 top: 4px
                                 left: 6px
                                 transform: rotate(15deg)
-                    .desc__text
-                        font-family: Proxima Nova Thin
-                        font-weight: 600
-                        font-size: 14px
-                        line-height: 21px
-                        color: #464646
+                .desc__height
+                    height: 45px
 
 .block-slider
     margin-bottom: 72px
@@ -670,11 +670,12 @@ body
                 margin-right: 145px
             .img-active
                 height: 580px
+                animation-duration: .7s
+                animation-name: slideIn
             .ee
                 display: none
             .block-image
                 text-align: center
-                transition: all 1s
                 &__img
                     margin-bottom: 18px
                 &__title
@@ -745,9 +746,14 @@ body
                         left: 14px
                         transform: rotate(-45deg)
 
+@keyframes slideIn
+    0%
+        transform: translateY(50px)
+    100%
+        transform: translateY(0)
+
 .block-map
     position: relative
-    margin-bottom: 120px
     &__fon
         position: absolute
         top: -300px
@@ -810,6 +816,8 @@ body
                 margin-bottom: 24px
                 border: 0
                 border-top: inset
+            &__name:focus
+                outline: none
             &__phone
                 display: block
                 width: 310px
@@ -820,6 +828,8 @@ body
                 margin-bottom: 24px
                 border: 0
                 border-top: inset
+            &__phone:focus
+                outline: none
             &__button
                 display: block
                 width: 310px
@@ -847,8 +857,6 @@ body
                 width: 250px
             &__checkbox
                 margin-right: 8px
-                // background: green
-                // color: green
             &__label
                 a
                     color: #323638
@@ -955,26 +963,48 @@ body
                 color: #777777
                         
 .footer
+    padding: 30px
     .container
         max-width: 1744px
         margin: 0 auto
     &__upper
+        width: 1416px
+        margin: 0 auto 30px
         display: flex
         justify-content: space-between
-        justify-content: space-around
+        // justify-content: space-around
     &__box-logo
         display: flex
         align-items: center
-        margin-right: 250px
+        // margin-right: 250px
         img
             margin-right: 63px
         p
+            line-height: 26px
             width: 200px
     &__navigation
+        display: flex
+        align-items: center
         ul
             margin: 0
             padding: 0
             display: flex
             list-style: none
+            li
+                font-family: "Mont Semibold"
+                font-weight: 400
+                font-size: 22px
+                line-height: 28px
             li:not(:last-child)
                 margin-right: 90px
+    hr
+        margin: 0 auto 30px
+        width: 1416px
+    &__lower
+        width: 1416px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+    &__politics
+        a
+            color: #447C2A
