@@ -9,6 +9,7 @@
     <title>Document</title>
 </head>
 <body>
+
     <header class="header">
         <div class="container">
             <div class="header__logo-group">
@@ -31,12 +32,32 @@
                     <p class="phone__text">Есть номер! Звоните</p>
                     <p class="phone__number">+7 495 797 77 35</p>
                 </div>
-                <div class="order-call">
+                <div class="order-call win-btn">
                     Заказать звонок
                 </div>
             </div>
         </div>
     </header>
+
+    <div class="popup-fon">
+        <div class="popup">
+            <div class="popup__title">
+                Заказать звонок
+            </div>
+            <div class="popup__subject">
+                Заполните форму и мы вам перезвоним
+            </div>
+            <form class="popup__form" action="">
+                <input class="popup__inp-name" type="text" placeholder="Имя">
+                <input class="popup__inp-tel" type="tel" name="phone" pattern="[A-Za-zА-Яа-яЁё]" placeholder="Номер телефона" required>
+                <button class="popup__btn ">Заказать звонок</button>
+                <div class="box-checkbox">
+                    <input type="checkbox" name="popup-checkbox" id="popup-checkbox">
+                    <label for="popup-checkbox">Вы соглашаетесь с <a href="#">условиями обработки персональных данных</a></label>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <div class="picture">
         <div class="container">
@@ -176,7 +197,7 @@
         <div class="container">
             <div class="block-carousel__upper">
                 <h2 class="block-carousel__upper__title">Вы получите <span>незабываемые <br> впечатления в нашей резиденции</span></h2>
-                <div class="block-carousel__upper__sign-up">
+                <div class="block-carousel__upper__sign-up win-btn">
                     Записаться на экскурсию
                 </div>
             </div>
@@ -203,7 +224,6 @@
                 <div class="indicators__circle circle-average-active"></div>
                 <div class="indicators__circle"></div>
                 <div class="indicators__circle"></div>
-                <div class="indicators__circle"></div>
             </div>
         </div>
     </div>
@@ -226,7 +246,7 @@
                         <p class="headline">
                             ЛАЙТ
                         </p>
-                        <div class="btn">
+                        <div class="btn btn-booking">
                             Забронировать
                         </div>
                     </div>
@@ -312,7 +332,7 @@
                         <p class="headline">
                             ЛАЙТ
                         </p>
-                        <div class="btn">
+                        <div class="btn btn-booking">
                             Забронировать
                         </div>
                     </div>
@@ -572,6 +592,36 @@
             </div>
         </div>
     </footer>
+
+    <div class="booking-popup-fon">
+        <div class="booking-popup">
+            <div class="booking-popup__title">
+                Забронировать Номер
+            </div>
+            <div class="booking-popup__subject">
+                Вам перезвонит менеджер в течении 15 минут и уточнит о наличии свободных мест
+            </div>
+            <form class="booking-popup__form" action="">
+                <input class="booking-popup__inp-name" type="text" placeholder="Имя">
+                <input class="booking-popup__inp-tel" type="tel" name="phone" placeholder="Номер телефона" required>
+                <div class="select">
+                    <input class="select__input" type="hidden" name="">
+                    <div class="select__head">Программа</div>
+                    <ul class="select__list">
+                        <li class="select__item">Лайт “Комфорт”</li>
+                        <li class="select__item">Лайт “Люкс”</li>
+                        <li class="select__item">Интенсив “Комфорт”</li>
+                        <li class="select__item">Интенсив “Люкс”</li>
+                    </ul>
+                </div>
+                <button class="booking-popup__btn ">Заказать звонок</button>
+                <div class="box-checkbox">
+                    <input type="checkbox" name="popup-checkbox" id="popup-checkbox-booking">
+                    <label for="popup-checkbox-booking">Вы соглашаетесь с <a href="#">условиями обработки персональных данных</a></label>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <script src="js/style.js"></script>
     <script src="https://kit.fontawesome.com/094e0b81b0.js" crossorigin="anonymous"></script>

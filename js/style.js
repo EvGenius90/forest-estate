@@ -9,9 +9,8 @@ let num = 1
 document.querySelector('.btn-right').addEventListener('click', _=>{
     ++num
 
-    // cicrle[num - 1].classList.remove('circle-active')
-
     if(num < image.length){
+
         image[num - 1].classList.remove('carousel-active')
         image[num].classList.add('carousel-active')
         image[num - 2].classList.add('ww')
@@ -23,10 +22,13 @@ document.querySelector('.btn-right').addEventListener('click', _=>{
         cicrle[num].classList.add('circle-average-active')
         cicrle[num - 3].classList.remove('circle-average-active')
         console.log(cicrle[num])
+
     }
 
     if(num >= image.length){
+
         --num
+
     }
     
 })
@@ -35,61 +37,28 @@ document.querySelector('.btn-left').addEventListener('click', _=>{
     --num
 
         if(num >= 1){
+
             image[num].classList.add('carousel-active')
             image[num + 1].classList.remove('carousel-active')
             image[num - 1].classList.remove('ww')
+
+            cicrle[num + 1].classList.remove('circle-average-active')
+            cicrle[num].classList.remove('circle-active')
+            cicrle[num - 1].classList.remove('circle-average-active')
+            cicrle[num - 1].classList.add('circle-active')
+            cicrle[num].classList.add('circle-average-active')
+            cicrle[num - 2].classList.add('circle-average-active')
+
         }
 
         if(num <= 0){
+
             ++num
+
         }
         
 })
 
-
-
-// document.addEventListener('click', function(r){
-//     if(r.target == '.info'){
-//         console.log('great')
-//     }
-// })
-
-// document.addEventListener('click', function(e){
-//     if(e.target('.block-price__close')){
-//         // const sa = e.target.closest('.info')
-//         console.log('good')
-//     }
-//     // console.log(e.target)
-    
-//     // if(e.target.closest == '.info'){
-//     //     console.log(ggg)
-//     // }
-// })
-
-// for(let i of priceClose){
-
-//     i.addEventListener('click', e=>{
-
-//         const cl = e.target.closest('.block-price__heading')
-//         const desc = cl.querySelector('.desc')
-
-//         desc.classList.toggle('desc__height')
-        
-//         if(desc.classList.contains('desc__height')){
-//             e.target.style.transform = `
-//                 rotate(30deg)
-//                 `
-//         }
-//         else{
-//             e.target.style.transform = `
-//                 rotate(0deg)
-//                 `
-//         }
-        
-        
-//     })
-
-// }
 
 document.addEventListener('click', function(e){
 
@@ -118,20 +87,7 @@ document.addEventListener('click', function(e){
 })
 
 
-// document.addEventListener('click', function(q){
-//     // можно и так
-//     if(q.target.classList.contains("benefits__title")){
-//         console.log('asd')
-//     }
-//     // и так
-//     if(q.target.classList == "benefits__title"){
-//         console.log('asd')
-//     }
-    
-// })
-
 const sliderImg = document.querySelectorAll('.block-image')
-
 let count = 1
 
 document.querySelector('.wrap__navigation__right').addEventListener('click', _=>{
@@ -143,12 +99,17 @@ document.querySelector('.wrap__navigation__right').addEventListener('click', _=>
         sliderImg[count - 1].classList.remove('img-active')
         sliderImg[count - 2].classList.add('ee')
         sliderImg[count].classList.add('img-active')
+
     }
 
     if(count >= sliderImg.length){
+
         --count
+
     }
+
 })
+
 
 document.querySelector('.wrap__navigation__left').addEventListener('click', _=>{
     --count
@@ -161,7 +122,88 @@ document.querySelector('.wrap__navigation__left').addEventListener('click', _=>{
     }
 
     if(count <= 0){
+
         ++count
+
+    }
+
+})
+
+
+const popupFon = document.querySelector('.popup-fon')
+const winBtn = document.querySelectorAll('.win-btn')
+
+for(let i of winBtn){
+
+    i.addEventListener('click', _=>{
+
+        popupFon.classList.add('popup-active')
+        document.body.style.overflow = 'hidden'
+        
+    })
+
+}
+
+document.addEventListener('click', e=>{
+
+    if(e.target.classList.contains('popup-fon')){
+
+        popupFon.classList.remove('popup-active')
+        document.body.style.overflow = ''
+
+    }
+
+})
+
+const selectHead = document.querySelector('.select__head')
+const selectList = document.querySelector('.select__list')
+
+selectHead.addEventListener('click', _=>{
+
+    selectHead.classList.toggle('open')
+    selectList.classList.toggle('bl')
+    
+})
+
+const btnBooking = document.querySelectorAll('.btn-booking')
+const bookingPopup = document.querySelector('.booking-popup-fon')
+const selectItem = document.querySelectorAll('.select__item')
+
+// при клике на кнопку "забронировать", открывается popup окно
+for(let i of btnBooking){
+
+    i.addEventListener('click', e=>{
+
+        bookingPopup.classList.add('booking-popup-active')
+        document.body.style.overflow = 'hidden'
+
+    })
+
+}
+
+// при клике на слово из списка в popup окне, выводится слово на которое
+// нажили и закрывается список.
+// и так же удаестя класс "open", что бы радиус бордера нормализовался
+for(let i of selectItem){
+
+    i.addEventListener('click', e=>{
+
+        selectHead.textContent = e.target.textContent
+        selectList.classList.remove('bl')
+        selectHead.classList.remove('open')
+
+    })
+
+}
+
+// при клике на фон закрывается popup окно
+document.addEventListener('click', e=>{
+
+    if(e.target.classList.contains('booking-popup-fon')){
+
+        bookingPopup.classList.remove('booking-popup-active')
+        document.body.style.overflow = ''
+
     }
 
 })

@@ -106,10 +106,84 @@ body
             padding: 25px 0 0 70px
             color: white
             font-family: 'Mont Extra Light'
-            // font-weight: 600
             font-size: 20px
             line-height: 26px
             cursor: pointer
+.popup-fon
+    background: rgba(0, 0, 0, 0.5)
+    width: 100%
+    height: 100%
+    position: fixed
+    z-index: 1
+    top: 0
+    display: none
+.popup
+    padding: 40px
+    width: 435px
+    height: 535px
+    background: #FCFCFC
+    border-radius: 24px
+    position: fixed
+    top: 10%
+    left: 50%
+    transform: translate(-50%)
+    z-index: 2
+    text-align: center
+    // display: none
+    &__title
+        font-family: Mont Semibold
+        font-weight: 600
+        font-size: 39px
+        line-height: 45px
+        color: #323638
+        margin-bottom: 15px
+    &__subject
+        font-family: Mont Semibold
+        font-weight: 600
+        font-size: 23px
+        line-height: 30px
+        color: #323638
+        margin-bottom: 15px
+    &__form  
+    &__inp-name
+        width: 343px
+        height: 70px
+        background: #EFEFEF
+        border: none
+        border-radius: 34px
+        margin-bottom: 25px
+        padding: 0 0 0 35px
+        &:focus
+            outline: none
+    &__inp-tel
+        width: 343px
+        height: 70px
+        background: #EFEFEF
+        border: none
+        border-radius: 34px
+        margin-bottom: 25px
+        padding: 0 0 0 35px
+        &:focus
+            outline: none
+    &__btn    
+        width: 343px
+        height: 77px
+        background: linear-gradient(0.25turn,#447C2A, #3DB846, #447C2A)
+        border-radius: 40px
+        color: white
+        border: none
+        font-family: 'Mont Extra Light'
+        font-size: 20px
+        line-height: 26px
+        cursor: pointer
+        margin-bottom: 15px
+        transition: .7s
+    &__btn:hover
+        filter: drop-shadow(rgba(42, 124, 48, 0.34) -6px 15px 5px)
+
+.popup-active
+    display: block
+        
 
 .picture
     position: relative
@@ -143,9 +217,11 @@ body
         position: absolute
         bottom: 60px
         left: 161px
+        width: clamp(900px, 80vw, 1450px)
+        // width: 1450px
         display: flex
         justify-content: space-between
-        width: 1450px
+        
         color: white
         font-family: 'Mont Light'
         font-weight: 600
@@ -159,7 +235,7 @@ body
         &__circle
             border-radius: 200%  
             background: #71AB28
-            width: 13px
+            min-width: 13px
             height: 13px
             margin-right: 22px
             
@@ -411,8 +487,6 @@ body
         width: 1413px
         height: 484px
         position: relative
-        // position: relative
-        // overflow: hidden
         margin: 0 auto
         margin-bottom: 27px
         &__subject
@@ -449,7 +523,6 @@ body
         overflow: hidden
         width: 1413px
         position: relative
-        // left: 0
         &__image
             width: 336px
             height: 484px
@@ -528,6 +601,7 @@ body
                     font-size: 20px
                     line-height: 26px
                     color: white
+                    cursor: pointer
             .subtitle
                 font-family: Proxima Nova Thin
                 font-weight: 400
@@ -1008,3 +1082,151 @@ body
     &__politics
         a
             color: #447C2A
+
+
+.booking-popup-fon
+    background: rgba(0, 0, 0, 0.5)
+    width: 100%
+    height: 100%
+    position: fixed
+    z-index: 1
+    top: 0
+    display: none
+.booking-popup-active
+    display: block
+    .booking-popup
+        padding: 40px
+        width: 440px
+        height: 700px
+        background: #FCFCFC
+        border-radius: 24px
+        position: fixed
+        top: 10%
+        left: 50%
+        transform: translate(-50%)
+        z-index: 2
+        text-align: center
+        &__title
+            font-family: Mont Semibold
+            font-weight: 600
+            font-size: 39px
+            line-height: 45px
+            color: #323638
+            margin-bottom: 15px
+        &__subject
+            width: 250px
+            margin: 0 auto
+            text-wrap: balance
+            font-family: Mont Semibold
+            font-weight: 400
+            font-size: 20px
+            line-height: 25px
+            color: #323638
+            margin-bottom: 15px
+        &__form
+            transition: .2s ease-in  
+            width: 343px
+        &__inp-name
+            width: 343px
+            height: 70px
+            background: #EFEFEF
+            border: none
+            border-radius: 34px
+            margin-bottom: 25px
+            padding: 0 0 0 35px
+            &:focus
+                outline: none
+        &__inp-tel
+            width: 343px
+            height: 70px
+            background: #EFEFEF
+            border: none
+            border-radius: 34px
+            margin-bottom: 25px
+            padding: 0 0 0 35px
+            &:focus
+                outline: none
+        .select
+            position: relative
+            display: block
+            min-width: 343px
+            width: 100%
+            max-width: 25px
+            margin-bottom: 20px
+            &__head
+                box-shadow: 0 0 4px rgba(0, 0, 0, 0.2)
+                border-radius: 34px
+                padding: 25px 0 0 35px
+                cursor: pointer
+                background: #efefef
+                height: 70px
+                text-align: left
+                &::after
+                    width: 10px
+                    height: 6px
+                    background: url(/src/img/Active.png) no-repeat center / cover
+                    position: absolute
+                    right: 20px
+                    bottom: 50%
+                    transform: translateY(50%)
+                    content: ''
+                    display: block
+            .open::after
+                transform: translateY(50%) rotate(180deg)
+            .open
+                border-radius: 0
+                border-top-left-radius: 34px
+                border-top-right-radius: 34px
+            &__list
+                display: none
+                position: absolute
+                top: 100%
+                left: -2px
+                right: -2px
+                background: #EFEFEF
+                // box-shadow: 0 0 4px rgba(0, 0, 0, 0.2)
+                border-bottom-left-radius: 34px
+                border-bottom-right-radius: 34px
+                margin-top: 5px
+                max-height: 205px
+                overflow-x: hidden
+                overflow-y: auto
+                z-index: 100
+                margin: 0
+                padding: 0
+                font-size: 14px
+                color: #424348
+                scrollbar-color: dark
+                scrollbar-width: thin
+                overscroll-behavior: contain
+                &::-webkit-scrollbar
+                    width: 7px
+                    background-color: #F8F9FA
+                    padding: 5px
+                &::-webkit-scrollbar-thumb
+                    border-radius: 10px
+                    background-color: #D9D9D9
+            .bl
+                display: block
+            &__item
+                position: relative
+                border-top: 1px solid rgba(224, 229, 231, 0.5)
+                padding: 10px 15px
+                cursor: pointer
+                list-style: none
+                &:hover
+                    background-color: rgba(224, 229, 231, 0.5)
+        &__btn
+            width: 343px
+            height: 70px
+            background: linear-gradient(0.25turn,#447C2A, #3DB846, #447C2A)
+            border-radius: 50px
+            border: none
+            color: white
+            margin-bottom: 20px
+            cursor: pointer
+        .box-checkbox
+
+
+
+
