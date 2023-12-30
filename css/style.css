@@ -262,7 +262,7 @@ body {
       .main__conditions__picture img {
         mix-blend-mode: darken; }
   .main__offer-list {
-    width: 1472px;
+    max-width: 1472px;
     margin: 0 auto; }
     .main__offer-list__flex {
       display: flex;
@@ -308,7 +308,7 @@ body {
     .main__offer-list__right {
       display: flex; }
       .main__offer-list__right .left-list .list-width {
-        width: 400px;
+        width: clamp(200px, 20vw, 400px);
         margin-bottom: 80px;
         margin-right: 47px; }
       .main__offer-list__right .left-list .service {
@@ -329,17 +329,17 @@ body {
       .main__offer-list__right .left-list .list__title {
         font-family: 'Proxima Nova Thin';
         font-weight: 600;
-        font-size: 24px;
+        font-size: clamp(15px, 1vw, 24px);
         line-height: 31px;
         margin-bottom: 22px; }
       .main__offer-list__right .left-list .list__text {
         font-family: 'Proxima Nova Thin';
         font-weight: 600;
-        font-size: 16px;
+        font-size: clamp(10px, 1vw, 16px);
         line-height: 19px;
         color: #747474; }
       .main__offer-list__right .right-list .list-width {
-        width: 400px;
+        width: clamp(200px, 20vw, 400px);
         margin-bottom: 80px; }
       .main__offer-list__right .right-list .prices {
         display: flex; }
@@ -359,13 +359,13 @@ body {
       .main__offer-list__right .right-list .list__title {
         font-family: 'Proxima Nova Thin';
         font-weight: 600;
-        font-size: 24px;
+        font-size: clamp(15px, 1vw, 24px);
         line-height: 31px;
         margin-bottom: 22px; }
       .main__offer-list__right .right-list .list__text {
         font-family: 'Proxima Nova Thin';
         font-weight: 600;
-        font-size: 16px;
+        font-size: clamp(10px, 1vw, 16px);
         line-height: 19px;
         color: #747474; }
 
@@ -502,10 +502,16 @@ body {
       width: 336px;
       height: 484px;
       border-radius: 24px;
-      transition: all 1s; }
+      transition: all 1s;
+      object-fit: cover; }
     .block-carousel__carousel .carousel-active {
       margin: 0 24px;
       width: 696px; }
+
+.qq {
+  max-width: 1493px;
+  padding: 50px;
+  margin: 0 auto; }
 
 .ww {
   width: 0; }
@@ -703,7 +709,7 @@ body {
       font-size: 48px;
       line-height: 51px; }
   .block-slider__slider .wrap {
-    width: 1413px;
+    max-width: 1413px;
     height: 600px;
     overflow: hidden;
     margin: 0 auto;
@@ -711,7 +717,7 @@ body {
     align-items: flex-end;
     position: relative; }
     .block-slider__slider .wrap .block-image:not(:last-child) {
-      margin-right: 145px; }
+      margin-right: clamp(70px, 8vw, 145px); }
     .block-slider__slider .wrap .img-active {
       height: 580px;
       animation-duration: .7s;
@@ -950,16 +956,15 @@ body {
         text-align: center; }
       .block-map__block-form .form .phone-socials .socials {
         text-align: center; }
+        .block-map__block-form .form .phone-socials .socials a:not(:last-child) {
+          margin-right: 9px; }
         .block-map__block-form .form .phone-socials .socials .fa-brands {
           font-size: 25px;
           width: 54px;
           height: 54px;
           padding: 15px;
           color: white;
-          border-radius: 30px;
-          cursor: pointer; }
-        .block-map__block-form .form .phone-socials .socials .fa-brands:not(:last-child) {
-          margin-right: 9px; }
+          border-radius: 30px; }
         .block-map__block-form .form .phone-socials .socials .fa-viber {
           background: #64569E; }
         .block-map__block-form .form .phone-socials .socials .fa-telegram {
@@ -1003,7 +1008,7 @@ body {
     max-width: 1744px;
     margin: 0 auto; }
   .footer__upper {
-    width: 1416px;
+    width: clamp(1050px, 80vw, 1416px);
     margin: 0 auto 30px;
     display: flex;
     justify-content: space-between; }
@@ -1032,9 +1037,9 @@ body {
         margin-right: 90px; }
   .footer hr {
     margin: 0 auto 30px;
-    width: 1416px; }
+    width: clamp(1050px, 80vw, 1416px); }
   .footer__lower {
-    width: 1416px;
+    width: clamp(1050px, 80vw, 1416px);
     margin: 0 auto;
     display: flex;
     justify-content: space-between; }
@@ -1182,3 +1187,46 @@ body {
       color: white;
       margin-bottom: 20px;
       cursor: pointer; }
+
+@media (max-width: 1529px) {
+  .header__logo-group .logo {
+    width: 90px; }
+  .header__group-text img {
+    width: 180px; }
+  .header__group-text p {
+    font-size: 15px;
+    margin-left: 10px; }
+  .header__navigation__list li {
+    font-size: 17px; }
+  .header__navigation__list li:not(:last-child) {
+    margin-right: clamp(25px, 4vw, 68px); }
+  .header__contacts .phone {
+    margin-right: 35px; }
+  .header__contacts .order-call {
+    width: 240px;
+    font-size: 17px;
+    height: 67px;
+    padding: 20px 0 0 60px; }
+  .block-carousel__upper {
+    padding: 0 20px;
+    margin-bottom: 20px; }
+    .block-carousel__upper__title {
+      font-size: 28px;
+      line-height: 40px;
+      margin-right: clamp(100px, 15vw, 410px); }
+    .block-carousel__upper__sign-up {
+      font-size: 15px;
+      padding: 25px 0 0 30px;
+      height: auto;
+      width: 236px; }
+  .block-carousel .ovw {
+    width: 1080px; }
+  .block-carousel__carousel {
+    width: 1080px; }
+    .block-carousel__carousel__image {
+      width: 230px;
+      height: 450px; }
+    .block-carousel__carousel .carousel-active {
+      width: 572px; }
+    .block-carousel__carousel .ww {
+      width: 0; } }

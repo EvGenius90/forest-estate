@@ -281,7 +281,7 @@ body
             img
                 mix-blend-mode: darken
     &__offer-list
-        width: 1472px
+        max-width: 1472px
         margin: 0 auto
         &__flex
             display: flex
@@ -328,7 +328,8 @@ body
             display: flex
             .left-list
                 .list-width
-                    width: 400px
+                    width: clamp(200px, 20vw, 400px)
+                    // width: 400px
                     margin-bottom: 80px
                     margin-right: 47px
                 .service
@@ -349,18 +350,21 @@ body
                 .list__title
                     font-family: 'Proxima Nova Thin'
                     font-weight: 600
-                    font-size: 24px
+                    font-size: clamp(15px, 1vw, 24px)
+                    // font-size: 24px
                     line-height: 31px
                     margin-bottom: 22px
                 .list__text
                     font-family: 'Proxima Nova Thin'
                     font-weight: 600
-                    font-size: 16px
+                    font-size: clamp(10px, 1vw, 16px)
+                    // font-size: 16px
                     line-height: 19px
                     color: #747474
             .right-list
                 .list-width
-                    width: 400px
+                    width: clamp(200px, 20vw, 400px)
+                    // width: 400px
                     margin-bottom: 80px
                 .prices
                     display: flex
@@ -380,13 +384,15 @@ body
                 .list__title
                     font-family: 'Proxima Nova Thin'
                     font-weight: 600
-                    font-size: 24px
+                    font-size: clamp(15px, 1vw, 24px)
+                    // font-size: 24px
                     line-height: 31px
                     margin-bottom: 22px
                 .list__text
                     font-family: 'Proxima Nova Thin'
                     font-weight: 600
-                    font-size: 16px
+                    font-size: clamp(10px, 1vw, 16px)
+                    // font-size: 16px
                     line-height: 19px
                     color: #747474
 
@@ -524,13 +530,21 @@ body
         width: 1413px
         position: relative
         &__image
+            // width: clamp(150px, 22vw, 336px)
             width: 336px
             height: 484px
             border-radius: 24px
             transition: all 1s
+            object-fit: cover
+            // object-position: 78%
         .carousel-active
             margin: 0 24px
             width: 696px
+
+.qq
+    max-width: 1493px
+    padding: 50px
+    margin: 0 auto
     
 .ww
     width: 0
@@ -733,7 +747,7 @@ body
             line-height: 51px
     &__slider
         .wrap
-            width: 1413px
+            max-width: 1413px
             height: 600px
             overflow: hidden
             margin: 0 auto
@@ -741,7 +755,8 @@ body
             align-items: flex-end
             position: relative
             .block-image:not(:last-child)
-                margin-right: 145px
+                margin-right: clamp(70px, 8vw, 145px)
+                // margin-right: 145px
             .img-active
                 height: 580px
                 animation-duration: .7s
@@ -989,6 +1004,8 @@ body
                     text-align: center
                 .socials
                     text-align: center
+                    a:not(:last-child)
+                        margin-right: 9px
                     .fa-brands
                         font-size: 25px
                         width: 54px
@@ -996,9 +1013,6 @@ body
                         padding: 15px
                         color: white
                         border-radius: 30px
-                        cursor: pointer
-                    .fa-brands:not(:last-child)
-                        margin-right: 9px
                     .fa-viber
                         background: #64569E
                     .fa-telegram
@@ -1042,15 +1056,13 @@ body
         max-width: 1744px
         margin: 0 auto
     &__upper
-        width: 1416px
+        width: clamp(1050px, 80vw, 1416px)
         margin: 0 auto 30px
         display: flex
         justify-content: space-between
-        // justify-content: space-around
     &__box-logo
         display: flex
         align-items: center
-        // margin-right: 250px
         img
             margin-right: 63px
         p
@@ -1073,9 +1085,9 @@ body
                 margin-right: 90px
     hr
         margin: 0 auto 30px
-        width: 1416px
+        width: clamp(1050px, 80vw, 1416px)
     &__lower
-        width: 1416px
+        width: clamp(1050px, 80vw, 1416px)
         margin: 0 auto
         display: flex
         justify-content: space-between
@@ -1230,3 +1242,58 @@ body
 
 
 
+@media ( max-width: 1529px )
+    // .container
+    //     width: 960px
+
+    .header
+        .container
+        &__logo-group
+            .logo
+                width: 90px
+        &__group-text
+            img
+                width: 180px
+            p
+                font-size: 15px
+                margin-left: 10px
+        &__navigation
+            &__list
+                li
+                    font-size: 17px
+                li:not(:last-child)
+                    margin-right: clamp(25px, 4vw, 68px)
+        &__contacts
+            .phone
+                margin-right: 35px
+            .order-call
+                width: 240px
+                font-size: 17px
+                height: 67px
+                padding: 20px 0 0 60px
+
+    .block-carousel
+        .container
+        &__upper
+            padding: 0 20px
+            margin-bottom: 20px
+            &__title
+                font-size: 28px
+                line-height: 40px
+                margin-right: clamp(100px, 15vw, 410px)
+            &__sign-up
+                font-size: 15px
+                padding: 25px 0 0 30px
+                height: auto
+                width: 236px
+        .ovw
+            width: 1080px
+        &__carousel
+            width: 1080px
+            &__image
+                width: 230px
+                height: 450px
+            .carousel-active
+                width: 572px
+            .ww
+                width: 0
