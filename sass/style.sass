@@ -857,6 +857,8 @@ body
         &__img
             width: 100%
             height: 683px
+            object-fit: cover
+            object-position: 100%
     &__block-form
         background: #FCFCFC
         width: 828px
@@ -1022,18 +1024,28 @@ body
     &__point-map
         position: absolute
         top: 430px
-        right: 25%
+        right: clamp(15%, 20vw, 25%)
+        // right: 25%
+        // width: clamp(50px 1vw, 225px)
+        // width: 50px
         svg
             position: relative
             z-index: 1
+            // width: clamp(50px 90vw, 225px)
+            height: clamp(150px, 12vw, 239px)
+            // height: 239px
+            // width: 225px
+            // width: 200px
         &__addres
             background: white
-            width: 326px
+            width: clamp(250px, 20vw, 326px)
+            // width: 326px
             height: 126px
             border-radius: 24px
             position: absolute
             top: 150px
-            left: 100px
+            left: clamp(50px, 1vw, 100px)
+            // left: 100px
             text-align: center
             padding: 22px
             &__title
