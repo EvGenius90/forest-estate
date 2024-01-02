@@ -332,6 +332,7 @@ body
                     // width: 400px
                     margin-bottom: 80px
                     margin-right: 47px
+                    min-height: 150px
                 .service
                     display: flex
                 .care
@@ -366,6 +367,7 @@ body
                     width: clamp(200px, 20vw, 400px)
                     // width: 400px
                     margin-bottom: 80px
+                    min-height: 150px
                 .prices
                     display: flex
                 .location
@@ -630,9 +632,13 @@ body
                     padding: 0
                     li
                         margin-bottom: 20px
-                    li:before
-                        content: 'o'
-                        color: green
+                        list-style: url(/src/img/Mark.png)
+                    // li:before
+                    //     content: ''
+                    //     width: 10px
+                    //     height: 10px
+                    //     // color: green
+                    //     background: green
             &__block-price
                 padding: 30px
                 background: #FFFAF2
@@ -755,8 +761,8 @@ body
             align-items: flex-end
             position: relative
             .block-image:not(:last-child)
-                margin-right: clamp(70px, 8vw, 145px)
-                // margin-right: 145px
+                // margin-right: clamp(70px, 8vw, 145px)
+                margin-right: 145px
             .img-active
                 height: 580px
                 animation-duration: .7s
@@ -854,8 +860,11 @@ body
     &__map
         padding: 130px
         margin: 0 auto
+        position: relative
         &__img
+            // width: 1400px
             width: 100%
+            min-width: 1000px
             height: 683px
             object-fit: cover
             object-position: 100%
@@ -865,7 +874,7 @@ body
         height: 605px
         position: absolute
         top: 170px
-        left: 250px
+        left: 170px
         border-radius: 24px
         padding: 50px
         &__title
@@ -1023,19 +1032,12 @@ body
                         background: #00AC10
     &__point-map
         position: absolute
-        top: 430px
-        right: clamp(15%, 20vw, 25%)
-        // right: 25%
-        // width: clamp(50px 1vw, 225px)
-        // width: 50px
+        top: 450px
+        right: 25%
         svg
             position: relative
             z-index: 1
-            // width: clamp(50px 90vw, 225px)
             height: clamp(150px, 12vw, 239px)
-            // height: 239px
-            // width: 225px
-            // width: 200px
         &__addres
             background: white
             width: clamp(250px, 20vw, 326px)
@@ -1093,6 +1095,9 @@ body
                 font-weight: 400
                 font-size: 22px
                 line-height: 28px
+                a
+                    text-decoration: none
+                    color: #1E1E1E
             li:not(:last-child)
                 margin-right: 90px
     hr
@@ -1284,6 +1289,22 @@ body
                 height: 67px
                 padding: 20px 0 0 60px
 
+    .main
+        &__fon-picture
+            top: 1080px
+        .container
+        &__conditions
+            padding: 20px
+            &__picture
+                width: auto
+                img
+                    width: 650px
+        &__offer-list
+            &__title
+                font-size: 38px
+                span
+                    font-size: 38px
+
     .block-carousel
         .container
         &__upper
@@ -1309,3 +1330,77 @@ body
                 width: 572px
             .ww
                 width: 0
+            
+    .block-slider
+        .container
+            width: 1045px
+        &__title
+            font-size: 38px
+            span
+                font-size: 38px
+        &__slider
+            .wrap
+                height: 530px
+                .block-image
+                    &__img
+                        width: 250px
+                .img-active
+                    height: 500px
+                &__navigation
+                    &__left
+                        top: 130px
+                        left: 370px
+                    &__right
+                        top: 130px
+                        left: 625px
+
+    .block-map
+        &__fon
+            width: 890px
+            top: -220px
+        .container
+        &__map
+            &__img
+                position: relative
+                // object-position: initial
+                object-position: 55%
+        &__block-form
+            padding: 15px
+            width: 720px
+            left: 150px
+            &__title
+                font-size: 29px
+                span
+                    font-size: 29px
+            .form
+                // display: block
+                .input-date
+                    &__title
+                        width: auto
+                &__hr
+                    margin: 0 15px
+                .phone-socials
+                    text-align: center
+                    &__numbers
+                        .number
+                            justify-content: center
+                        .work-schedule
+                            &__circles
+                                justify-content: center
+        &__point-map
+            top: 480px
+            // right: clamp(2%, 26vw, 20%)
+            right: clamp(10%, 15vw, 22%)
+            // right: 27%
+            // position: fixed
+            // object-position: 50%
+            &__addres
+                width: 220px
+
+    .footer
+        .container
+        &__upper
+        &__navigation
+            ul
+                li
+                    font-size: 17px
