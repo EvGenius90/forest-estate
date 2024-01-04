@@ -21,7 +21,6 @@ document.querySelector('.btn-right').addEventListener('click', _=>{
         cicrle[num - 1].classList.add('circle-active')
         cicrle[num].classList.add('circle-average-active')
         cicrle[num - 3].classList.remove('circle-average-active')
-        console.log(cicrle[num])
 
     }
 
@@ -36,11 +35,12 @@ document.querySelector('.btn-right').addEventListener('click', _=>{
 document.querySelector('.btn-left').addEventListener('click', _=>{
     --num
 
-        if(num >= 1){
+        if(num >= 0){
 
             image[num].classList.add('carousel-active')
             image[num + 1].classList.remove('carousel-active')
             image[num - 1].classList.remove('ww')
+            
 
             cicrle[num + 1].classList.remove('circle-average-active')
             cicrle[num].classList.remove('circle-active')
@@ -51,7 +51,7 @@ document.querySelector('.btn-left').addEventListener('click', _=>{
 
         }
 
-        if(num <= 0){
+        if(num < 0){
 
             ++num
 
@@ -202,6 +202,29 @@ document.addEventListener('click', e=>{
     if(e.target.classList.contains('booking-popup-fon')){
 
         bookingPopup.classList.remove('booking-popup-active')
+        document.body.style.overflow = ''
+
+    }
+
+})
+
+
+// клик по бургеру
+const headerNavigation = document.querySelector('.header__navigation')
+
+document.querySelector('.burger').addEventListener('click', _=>{
+
+    headerNavigation.classList.toggle('header-navigation-active')
+    document.querySelector('.header__phone').classList.toggle('header__phone-active')
+    document.querySelector('.burger-socials').classList.toggle('burger-socials-active')
+
+    if(headerNavigation.classList.contains('header-navigation-active')){
+
+        document.body.style.overflow = 'hidden'
+
+    }
+    else{
+
         document.body.style.overflow = ''
 
     }

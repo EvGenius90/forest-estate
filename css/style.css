@@ -106,9 +106,9 @@ body {
       font-size: 20px;
       line-height: 26px;
       cursor: pointer; }
-  .header .header__phone-active {
+  .header__phone {
     display: none; }
-  .header .burger-socials-active {
+  .header .burger-socials {
     display: none; }
 
 .popup-fon {
@@ -734,7 +734,7 @@ body {
     display: flex;
     align-items: flex-end;
     position: relative; }
-    .block-slider__slider .wrap .block-image:not(:last-child) {
+    .block-slider__slider .wrap .block-image {
       margin-right: 145px; }
     .block-slider__slider .wrap .img-active {
       height: 580px;
@@ -1369,7 +1369,7 @@ body {
     left: 45px;
     font-size: 18px; }
   .main__fon-picture {
-    display: none; }
+    top: 980px; }
   .main__conditions__desc {
     width: 410px; }
     .main__conditions__desc__title {
@@ -1495,26 +1495,28 @@ body {
   .header .container .burger {
     display: block; }
   .header__navigation {
+    -webkit-transition: 1s all;
     display: none;
     position: fixed;
     z-index: 1;
     right: 0;
-    top: 0;
+    top: 67px;
     width: 320px;
     height: 100%;
     background: #FCFCFCDE;
-    padding: 30px 0 0 30px; }
+    padding: 20px 0 0 20px; }
     .header__navigation .header__navigation__list {
       display: block; }
       .header__navigation .header__navigation__list li:not(:last-child) {
-        margin-bottom: 20px; }
+        margin-bottom: 10px; }
       .header__navigation .header__navigation__list li {
         border-bottom: 1px solid #D6D6D6;
         padding-bottom: 10px; }
         .header__navigation .header__navigation__list li a {
           font-size: 22px; }
   .header .header-navigation-active {
-    display: block; }
+    display: block;
+    transition: all 1s; }
   .header__contacts .phone {
     display: none; }
   .header__contacts .order-call {
@@ -1525,8 +1527,8 @@ body {
     display: block;
     position: fixed;
     z-index: 1;
-    right: -30px;
-    top: 270px;
+    right: -20px;
+    top: 295px;
     width: 320px;
     border-bottom: 1px solid #D6D6D6;
     padding-bottom: 10px; }
@@ -1572,18 +1574,140 @@ body {
     display: block;
     position: fixed;
     z-index: 1;
-    right: 115px;
-    top: 390px; }
+    right: 126px;
+    top: 410px; }
     .header__contacts .burger-socials-active .phone-socials__read-online {
       font-family: Proxima Nova Thin;
       font-weight: 600;
       font-size: 25px;
       line-height: 30px;
       margin-bottom: 15px; }
-    .header__contacts .burger-socials-active .socials {
-      height: 54px; }
-      .header__contacts .burger-socials-active .socials a .fa-brands {
-        font-size: 45px; } }
+    .header__contacts .burger-socials-active .socials a .fa-brands {
+      font-size: 22px;
+      width: 54px;
+      height: 54px;
+      padding: 16px;
+      color: white;
+      border-radius: 30px; }
+    .header__contacts .burger-socials-active .socials a .fa-brands:not(:last-child) {
+      margin-right: 10px; }
+    .header__contacts .burger-socials-active .socials a .fa-viber {
+      background: #64569E; }
+    .header__contacts .burger-socials-active .socials a .fa-telegram {
+      background: #00BBF0; }
+    .header__contacts .burger-socials-active .socials a .fa-whatsapp {
+      background: #00AC10; }
+  .picture__title {
+    top: 0;
+    width: 640px; }
+    .picture__title__subject {
+      font-size: 24px; }
+    .picture__title__text {
+      font-size: 18px; }
+  .picture__list {
+    display: block;
+    top: 380px;
+    font-size: 20px;
+    width: 640px; }
+    .picture__list li:not(:last-child) {
+      margin-bottom: 15px; }
+  .main {
+    margin-bottom: 40px; }
+    .main__conditions {
+      display: block; }
+      .main__conditions__desc {
+        width: auto;
+        margin: 0 auto; }
+        .main__conditions__desc__title {
+          font-size: 28px; }
+          .main__conditions__desc__title span {
+            font-size: 28px; }
+        .main__conditions__desc__text {
+          font-size: 18px; }
+      .main__conditions__picture {
+        margin: 0 auto; }
+    .main__offer-list__flex {
+      display: block; }
+    .main__offer-list__left {
+      width: 425px;
+      margin: 0 auto 40px; }
+    .main__offer-list__right {
+      width: 570px;
+      margin: 0 auto; }
+      .main__offer-list__right .left-list .list-width {
+        width: 280px;
+        margin-right: 10px; }
+      .main__offer-list__right .right-list .list-width {
+        width: 280px; }
+  .block-carousel .ovw {
+    width: 700px; }
+  .block-carousel__carousel {
+    width: 700px; }
+    .block-carousel__carousel__image {
+      width: 0; }
+    .block-carousel__carousel .carousel-active {
+      margin: 0 auto; }
+  .block-carousel .btn-left {
+    left: -10px; }
+  .block-carousel .btn-right {
+    right: -10px; }
+  .block-video {
+    margin-bottom: 40px; }
+    .block-video .container video {
+      height: 405px; }
+  .benefits__promo {
+    display: block;
+    width: auto;
+    padding: 40px; }
+    .benefits__promo__left {
+      margin-bottom: 20px; }
+    .benefits__promo__right {
+      margin: 0 auto; }
+  .block-slider .container {
+    width: 720px; }
+  .block-slider__slider .wrap {
+    width: auto; }
+    .block-slider__slider .wrap .block-image:not(:last-child) {
+      margin-right: 60px; }
+    .block-slider__slider .wrap .block-image {
+      width: 190px; }
+      .block-slider__slider .wrap .block-image img {
+        width: 190px; }
+    .block-slider__slider .wrap .img-active {
+      height: 390px; }
+    .block-slider__slider .wrap__navigation__left {
+      top: 205px;
+      left: 235px; }
+    .block-slider__slider .wrap__navigation__right {
+      top: 205px;
+      left: 415px; }
+  .block-map__map__img {
+    width: 490px;
+    height: 1400px;
+    object-position: 80%; }
+  .block-map__block-form {
+    width: 492px;
+    height: 900px; }
+    .block-map__block-form__title {
+      margin-bottom: 20px; }
+    .block-map__block-form .form {
+      display: block; }
+      .block-map__block-form .form__name {
+        margin: 0 auto;
+        margin-bottom: 20px; }
+      .block-map__block-form .form__phone {
+        margin: 0 auto;
+        margin-bottom: 20px; }
+      .block-map__block-form .form__button {
+        margin: 0 auto;
+        margin-bottom: 20px; }
+      .block-map__block-form .form__box {
+        margin: 0 auto;
+        margin-bottom: 20px; }
+      .block-map__block-form .form__hr {
+        height: auto;
+        width: 300px;
+        margin: 25px auto; } }
 
 @media (max-width: 767px) {
   .container {
