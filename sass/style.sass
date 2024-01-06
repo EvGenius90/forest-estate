@@ -349,7 +349,7 @@ body
                     // width: 400px
                     margin-bottom: 80px
                     margin-right: 47px
-                    min-height: 150px
+                    min-height: 170px
                 .service
                     display: flex
                 .care
@@ -384,7 +384,7 @@ body
                     width: clamp(200px, 20vw, 400px)
                     // width: 400px
                     margin-bottom: 80px
-                    min-height: 150px
+                    min-height: 170px
                 .prices
                     display: flex
                 .location
@@ -551,13 +551,11 @@ body
         width: 1413px
         position: relative
         &__image
-            // width: clamp(150px, 22vw, 336px)
             width: 336px
             height: 484px
             border-radius: 24px
             transition: all 1s
             object-fit: cover
-            // object-position: 78%
         .carousel-active
             margin: 0 24px
             width: 696px
@@ -1061,7 +1059,7 @@ body
         svg
             position: relative
             z-index: 1
-            height: clamp(150px, 12vw, 239px)
+            height: clamp(170px, 12vw, 239px)
         &__addres
             background: white
             width: clamp(250px, 20vw, 326px)
@@ -1069,7 +1067,7 @@ body
             height: 126px
             border-radius: 24px
             position: absolute
-            top: 150px
+            top: 170px
             left: clamp(50px, 1vw, 100px)
             // left: 100px
             text-align: center
@@ -1408,7 +1406,7 @@ body
         &__block-form
             padding: 15px
             width: 720px
-            left: 150px
+            left: 170px
             &__title
                 font-size: 29px
                 span
@@ -1457,7 +1455,7 @@ body
         &__group-text
             
             img
-                width: 150px
+                width: 170px
             p
                 font-size: 13px
                 margin-left: 0
@@ -1524,7 +1522,7 @@ body
                 &__upper
                     width: 200px
                 .circle
-                    top: 150px
+                    top: 170px
                     left: 110px
                     width: 180px
                     height: 180px
@@ -1549,7 +1547,7 @@ body
         &__carousel
             width: 870px
             &__image
-                width: 150px
+                width: 170px
             .carousel-active
                 width: 522px
 
@@ -1612,7 +1610,7 @@ body
         .container
         &__fon
         &__map
-            padding: 150px
+            padding: 170px
             &__img
                 min-width: 0
                 width: 719px
@@ -1662,7 +1660,7 @@ body
             right: 0
             top: 67px
             width: 320px
-            height: 100%
+            height: 100dvh
             background: #FCFCFCDE
             padding: 20px 0 0 20px
             .header__navigation__list
@@ -1822,18 +1820,22 @@ body
 
     .block-carousel
         .ovw
-            width: 700px
+            width: 644px
         &__carousel
-            width: 700px
-            // margin: 0 atuo
+            width: 644px
+            overflow-x: scroll
+            overflow-y: hidden
             &__image
-                width: 0
+                width: 700px
             .carousel-active
                 margin: 0 auto
+                width: auto
         .btn-left
-            left: -10px
+            // left: -10px
+            display: none
         .btn-right
-            right: -10px
+            // right: -10px
+            display: none
 
     .block-video
         margin-bottom: 40px
@@ -1875,6 +1877,8 @@ body
                         left: 415px
 
     .block-map
+        &__fon
+            width: 790px
         &__map
             &__img
                 width: 490px
@@ -1905,16 +1909,351 @@ body
                     height: auto
                     width: 300px
                     margin: 25px auto
+        &__point-map
+            top: 1020px
+            &__addres
+                top: 200px
 
-
-            
-            
+    .footer
+        &__upper
+            width: auto
+        &__box-logo
+            display: block
+            img
+                margin-right: 0
+                margin-bottom: 20px
+        hr
+            width: 710px
+        &__lower
+            width: auto
 
 
 @media ( max-width: 767px )
     .container
         width: 540px
 
-// @media ( max-width: 575px )
-//     .container
-//         width: 100%
+    .picture
+        &__image
+            height: 570px
+        &__title
+            width: auto
+            &__subject
+                line-height: 30px
+        &__list
+            top: 320px
+            width: auto
+
+    .main
+        &__fon-picture
+            top: 650px
+        &__conditions
+            &__desc
+                &__title
+                    line-height: 30px
+                    margin-bottom: 30px
+        &__offer-list
+            width: auto
+            &__title
+                width: auto
+            &__flex
+            &__right
+                width: auto
+                .left-list
+                    .list-width
+                        width: 260px
+                .right-list
+                    .list-width
+                        width: 260px
+
+    .block-carousel
+        &__upper
+            display: block
+            &__title
+                margin-bottom: 30px
+            &__sign-up
+                padding: 16px 30px
+                height: 60px
+        .ovw
+            width: auto
+        &__carousel
+            width: auto
+            &__image
+                width: 540px
+            .carousel-active
+                width: auto
+
+    .block-video
+        .container
+            video
+                height: 303px
+
+    .benefits
+        &__title
+            width: auto
+        &__promo
+            &__right
+                width: 459px
+
+    .block-slider
+        .container
+            width: 540px
+        &__slider
+            .wrap
+                width: 550px
+                .block-image
+                    width: 143px
+                    .block-image__img
+                        width: 143px
+                    &__title
+                        font-size: 16px
+                    &__doctor
+                        font-size: 10px
+                &__navigation
+                    &__left
+                        top: 190px
+                        left: 175px
+                    &__right
+                        top: 190px
+                        left: 325px
+
+    .block-map
+        &__fon
+            width: 590px
+            top: -110px
+        &__map
+            padding: 130px 0 0 30px
+        &__block-form
+            left: 30px
+
+    .footer
+        &__upper
+        &__navigation
+            ul
+                display: block
+                li
+                    font-size: 20px
+                li:not(:last-child)
+                    margin-bottom: 20px
+        hr
+            width: 510px
+
+
+@media ( max-width: 575px )
+    .container
+        width: 335px
+
+    .picture
+        .container
+            // width: 350px
+        &__image
+            border-radius: 24px
+        &__title
+            left: 13px
+            width: 320px
+            &__subject
+                font-size: 24px
+            &__text
+                font-size: 15px
+                width: auto
+        &__list
+            left: 13px
+            font-size: 15px
+            width: 320px
+            li
+                width: auto
+
+    .main
+        &__conditions
+            &__desc
+                &__title
+                    font-size: 25px
+                    line-height: 30px
+                    span
+                        font-size: 25px
+                        line-height: 30px
+                &__text
+                    font-size: 15px
+            &__picture
+                width: 320px
+                img
+                    width: 100%
+        &__offer-list
+            &__title
+                font-size: 25px
+                line-height: 30px
+                width: 300px
+                margin-left: 20px
+                span
+                    font-size: 25px
+                    line-height: 30px
+            &__flex
+            &__left
+                width: 340px
+                &__lower
+                    width: 160px
+                &__image
+                    width: 160px
+                &__upper
+                    width: 160px
+                .circle
+                    top: 130px
+                    left: 90px
+                    width: 160px
+                    height: 160px
+                    img
+                        width: 100px
+            &__right
+                display: block
+                .left-list
+                    padding-left: 20px
+                    .list-width
+                        width: 320px
+                        .mini-circle
+                            width: 42px
+                            height: 42px
+                            img
+                                padding: 15px 10px 10px 10px
+                .right-list
+                    padding-left: 20px
+                    .list-width
+                        width: 320px
+                        .mini-circle
+                            width: 42px
+                            height: 42px
+                            img
+                                padding: 15px 10px 10px 10px
+
+    .block-carousel
+        &__upper
+            &__title
+                font-size: 25px
+            &__sign-up
+                width: auto
+                padding: 16px 43px
+                font-size: 18px
+        .ovw
+        &__carousel
+            &__image
+                width: 335px
+            .carousel-active
+                width: 335px
+
+    .block-video
+        .container
+            video
+                height: 190px
+
+    .benefits
+        width: 350px
+        &__title
+            font-size: 22px
+            span
+                font-size: 22px
+        &__promo
+            &__left
+                .headline-btn
+                    display: block
+                    margin-bottom: 20px
+                    .headline
+                        line-height: 50px
+                    .btn
+                        width: auto
+                        padding: 20px 0 20px 40px
+                &__block-price
+                    padding: 10px
+                    width: 275px
+                    .block-price__heading
+                        .info
+                            &__block-text
+                                display: block
+                                width: auto
+                                hr
+                                    display: none
+                            &__caption
+                                font-size: 16px
+                            &__price
+                                font-size: 18px
+            &__right
+                width: 273px
+
+    .block-slider
+        .container
+            width: 340px
+        &__title
+            font-size: 24px
+            span
+                font-size: 24px
+                margin: 0
+        &__slider
+            .wrap
+                height: 300px
+                width: 100%
+                .block-image:not(:last-child)
+                    margin-right: 50px
+                .img-active
+                    height: auto
+                &__navigation
+                    &__left
+                        top: 0
+                        left: 0
+                    &__right
+                        top: 0
+                        left: 295px
+
+    .block-map
+        &__fon
+            width: 370px
+            top: -20px
+        &__map
+            &__img
+                width: 310px
+        &__block-form
+            width: 310px
+            &__title
+                width: 100%
+                font-size: 20px
+                line-height: 30px
+                span
+                    font-size: 20px
+                    line-height: 30px
+            .form
+                .input-date
+                    &__title
+                        font-size: 20px
+                &__name
+                    width: 100%
+                &__phone
+                    width: 100%
+                &__button
+                    width: 100%
+                .phone-socials
+                    &__title
+                        font-size: 20px
+                    &__numbers
+                        .number
+                            p
+                                font-size: 20px
+                    &__read-online
+                        font-size: 20px
+                &__hr
+                    width: 270px
+        &__point-map
+            &__addres
+                left: 20px
+                width: 290px
+
+    .footer
+        .container
+            // width: 340px
+        &__upper
+            display: block
+        &__box-logo
+            display: flex
+            img
+                margin-right: 50px
+            p
+                font-size: 18px
+        hr
+            width: auto
+        &__lower
+            display: block
