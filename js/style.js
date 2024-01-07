@@ -6,6 +6,7 @@ const cicrle = document.querySelectorAll('.indicators__circle')
 let offset = 0
 let num = 1
 
+// показывает следующую фотографию при клике враво
 document.querySelector('.btn-right').addEventListener('click', _=>{
     ++num
 
@@ -15,12 +16,12 @@ document.querySelector('.btn-right').addEventListener('click', _=>{
         image[num].classList.add('carousel-active')
         image[num - 2].classList.add('ww')
 
-        cicrle[num - 2].classList.remove('circle-active')
-        cicrle[num - 2].classList.add('circle-average-active')
-        cicrle[num - 1].classList.remove('circle-average-active')
-        cicrle[num - 1].classList.add('circle-active')
-        cicrle[num].classList.add('circle-average-active')
-        cicrle[num - 3].classList.remove('circle-average-active')
+        // cicrle[num - 2].classList.remove('circle-active')
+        // cicrle[num - 2].classList.add('circle-average-active')
+        // cicrle[num - 1].classList.remove('circle-average-active')
+        // cicrle[num - 1].classList.add('circle-active')
+        // cicrle[num].classList.add('circle-average-active')
+        // cicrle[num - 3].classList.remove('circle-average-active')
 
     }
 
@@ -32,6 +33,7 @@ document.querySelector('.btn-right').addEventListener('click', _=>{
     
 })
 
+// показывает предыдущую фотографию при клике влево
 document.querySelector('.btn-left').addEventListener('click', _=>{
     --num
 
@@ -59,7 +61,7 @@ document.querySelector('.btn-left').addEventListener('click', _=>{
         
 })
 
-
+// меняется анимация крестика при клике на него
 document.addEventListener('click', function(e){
 
     if(e.target.classList == "block-price__close" || e.target.classList == "block-price__close__horizontal" || e.target.classList == "block-price__close__vertical"){
@@ -86,7 +88,7 @@ document.addEventListener('click', function(e){
     
 })
 
-
+// показывает следующую фотографию при клике враво
 const sliderImg = document.querySelectorAll('.block-image')
 let count = 1
 
@@ -110,7 +112,7 @@ document.querySelector('.wrap__navigation__right').addEventListener('click', _=>
 
 })
 
-
+// показывает предыдущую фотографию при клике влево
 document.querySelector('.wrap__navigation__left').addEventListener('click', _=>{
     --count
 
@@ -129,7 +131,7 @@ document.querySelector('.wrap__navigation__left').addEventListener('click', _=>{
 
 })
 
-
+// показывает popup окно
 const popupFon = document.querySelector('.popup-fon')
 const winBtn = document.querySelectorAll('.win-btn')
 
@@ -144,6 +146,7 @@ for(let i of winBtn){
 
 }
 
+// при клике на фон popup окна, закрывается окно
 document.addEventListener('click', e=>{
 
     if(e.target.classList.contains('popup-fon')){
