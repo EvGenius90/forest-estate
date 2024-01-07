@@ -16,26 +16,6 @@ body
     font-style: normal
 
 @font-face 
-    font-family: 'Mont Semibold'
-    src: local('Mont Semibold')
-    src: url('/src/fonts/Mont-SemiBold.eot')
-    src: url('/src/fonts/Mont-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('/src/fonts/Mont-SemiBold.woff') format('woff'),
-    url('/src/fonts/Mont-SemiBold.ttf') format('truetype')
-    font-weight: normal
-    font-style: normal
-
-@font-face 
-    font-family: 'Mont Extra Light'
-    src: local('Mont Extra Light')
-    src: url('/src/fonts/Mont-ExtraLight.eot')
-    src: url('/src/fonts/Mont-ExtraLight.eot?#iefix') format('embedded-opentype'),
-    url('/src/fonts/Mont-ExtraLight.woff') format('woff'),
-    url('/src/fonts/Mont-ExtraLight.ttf') format('truetype')
-    font-weight: normal
-    font-style: normal
-
-@font-face 
     font-family: 'Proxima Nova Thin'
     src: url('/src/fonts/ProximaNovaT-Thin.eot')
     src: url('/src/fonts/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
@@ -1948,7 +1928,8 @@ body
 
     .main
         &__fon-picture
-            top: 1800px
+            top: 496px
+            height: 780px
         &__conditions
             &__desc
                 &__title
@@ -2067,7 +2048,8 @@ body
 
     .main
         &__fon-picture
-            top: 2245px
+            top: 410px
+            height: 625px
         &__conditions
             &__desc
                 &__title
@@ -2149,7 +2131,6 @@ body
                 height: 190px
 
     .benefits
-        width: 350px
         &__title
             font-size: 22px
             span
@@ -2262,3 +2243,34 @@ body
             width: auto
         &__lower
             display: block
+
+    .booking-popup-active
+        .booking-popup
+            width: 340px
+            height: 570px
+            padding: 15px
+            &__title
+                font-size: 33px
+            &__subject
+                font-size: 18px
+            &__form
+                width: 270px
+            &__inp-name
+                width: 100%
+                height: 50px
+            &__inp-tel
+                width: 100%
+                height: 50px
+            .select
+                max-width: 270px
+                min-width: 270px
+                height: 50px
+                &__head
+                    width: 270px
+                    height: 50px
+                    padding: 17px 0 0 35px
+                    &::after
+                        // right: 100px
+            &__btn
+                width: 100%
+                height: 50px

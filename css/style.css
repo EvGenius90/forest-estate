@@ -13,22 +13,6 @@ body {
   font-style: normal; }
 
 @font-face {
-  font-family: 'Mont Semibold';
-  src: local("Mont Semibold");
-  src: url("/src/fonts/Mont-SemiBold.eot");
-  src: url("/src/fonts/Mont-SemiBold.eot?#iefix") format("embedded-opentype"), url("/src/fonts/Mont-SemiBold.woff") format("woff"), url("/src/fonts/Mont-SemiBold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Mont Extra Light';
-  src: local("Mont Extra Light");
-  src: url("/src/fonts/Mont-ExtraLight.eot");
-  src: url("/src/fonts/Mont-ExtraLight.eot?#iefix") format("embedded-opentype"), url("/src/fonts/Mont-ExtraLight.woff") format("woff"), url("/src/fonts/Mont-ExtraLight.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
   font-family: 'Proxima Nova Thin';
   src: url("/src/fonts/ProximaNovaT-Thin.eot");
   src: url("/src/fonts/ProximaNovaT-Thin.eot?#iefix") format("embedded-opentype"), url("/src/fonts/ProximaNovaT-Thin.woff") format("woff"), url("/src/fonts/ProximaNovaT-Thin.ttf") format("truetype");
@@ -1747,7 +1731,8 @@ body {
     top: 320px;
     width: auto; }
   .main__fon-picture {
-    top: 1800px; }
+    top: 496px;
+    height: 780px; }
   .main__conditions__desc__title {
     line-height: 30px;
     margin-bottom: 30px; }
@@ -1836,7 +1821,8 @@ body {
     .picture__list li {
       width: auto; }
   .main__fon-picture {
-    top: 2245px; }
+    top: 410px;
+    height: 625px; }
   .main__conditions__desc__title {
     font-size: 25px;
     line-height: 30px; }
@@ -1904,34 +1890,32 @@ body {
     width: 335px; }
   .block-video .container video {
     height: 190px; }
-  .benefits {
-    width: 350px; }
-    .benefits__title {
+  .benefits__title {
+    font-size: 22px; }
+    .benefits__title span {
       font-size: 22px; }
-      .benefits__title span {
-        font-size: 22px; }
-    .benefits__promo__left .headline-btn {
+  .benefits__promo__left .headline-btn {
+    display: block;
+    margin-bottom: 20px; }
+    .benefits__promo__left .headline-btn .headline {
+      line-height: 50px; }
+    .benefits__promo__left .headline-btn .btn {
+      width: auto;
+      padding: 20px 0 20px 40px; }
+  .benefits__promo__left__block-price {
+    padding: 10px;
+    width: 275px; }
+    .benefits__promo__left__block-price .block-price__heading .info__block-text {
       display: block;
-      margin-bottom: 20px; }
-      .benefits__promo__left .headline-btn .headline {
-        line-height: 50px; }
-      .benefits__promo__left .headline-btn .btn {
-        width: auto;
-        padding: 20px 0 20px 40px; }
-    .benefits__promo__left__block-price {
-      padding: 10px;
-      width: 275px; }
-      .benefits__promo__left__block-price .block-price__heading .info__block-text {
-        display: block;
-        width: auto; }
-        .benefits__promo__left__block-price .block-price__heading .info__block-text hr {
-          display: none; }
-      .benefits__promo__left__block-price .block-price__heading .info__caption {
-        font-size: 16px; }
-      .benefits__promo__left__block-price .block-price__heading .info__price {
-        font-size: 18px; }
-    .benefits__promo__right {
-      width: 273px; }
+      width: auto; }
+      .benefits__promo__left__block-price .block-price__heading .info__block-text hr {
+        display: none; }
+    .benefits__promo__left__block-price .block-price__heading .info__caption {
+      font-size: 16px; }
+    .benefits__promo__left__block-price .block-price__heading .info__price {
+      font-size: 18px; }
+  .benefits__promo__right {
+    width: 273px; }
   .block-slider .container {
     width: 340px; }
   .block-slider__title {
@@ -1996,4 +1980,31 @@ body {
   .footer hr {
     width: auto; }
   .footer__lower {
-    display: block; } }
+    display: block; }
+  .booking-popup-active .booking-popup {
+    width: 340px;
+    height: 570px;
+    padding: 15px; }
+    .booking-popup-active .booking-popup__title {
+      font-size: 33px; }
+    .booking-popup-active .booking-popup__subject {
+      font-size: 18px; }
+    .booking-popup-active .booking-popup__form {
+      width: 270px; }
+    .booking-popup-active .booking-popup__inp-name {
+      width: 100%;
+      height: 50px; }
+    .booking-popup-active .booking-popup__inp-tel {
+      width: 100%;
+      height: 50px; }
+    .booking-popup-active .booking-popup .select {
+      max-width: 270px;
+      min-width: 270px;
+      height: 50px; }
+      .booking-popup-active .booking-popup .select__head {
+        width: 270px;
+        height: 50px;
+        padding: 17px 0 0 35px; }
+    .booking-popup-active .booking-popup__btn {
+      width: 100%;
+      height: 50px; } }
