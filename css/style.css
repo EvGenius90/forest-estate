@@ -2,8 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  padding-top: 9px;
-  background: #FFF0D957; }
+  padding-top: 9px; }
 
 @font-face {
   font-family: 'Mont Light';
@@ -238,10 +237,11 @@ body {
       margin-right: 22px; }
 
 .main {
-  margin-bottom: 114px;
+  padding-bottom: 114px;
   position: relative; }
   .main__fon-picture {
     position: absolute;
+    z-index: 1;
     top: 1000px;
     right: 0; }
   .main .container {
@@ -389,7 +389,8 @@ body {
 
 .block-carousel {
   position: relative;
-  margin-bottom: 56px; }
+  padding-bottom: 56px;
+  background: linear-gradient(#FFFFFF, #FFF0D957); }
   .block-carousel .container {
     max-width: 1744px;
     margin: 0 auto; }
@@ -537,7 +538,8 @@ body {
   width: 0; }
 
 .block-video {
-  margin-bottom: 112px; }
+  padding-bottom: 112px;
+  background: linear-gradient(#FFF0D957, #FFFFFF); }
   .block-video .container {
     max-width: 1744px;
     margin: 0 auto; }
@@ -709,7 +711,8 @@ body {
           height: 45px; }
 
 .block-slider {
-  margin-bottom: 72px; }
+  padding-bottom: 72px;
+  background: linear-gradient(#FFFFFF, #FFF0D957, #FFFFFF); }
   .block-slider .container {
     max-width: 1744px;
     margin: 0 auto; }
@@ -1246,7 +1249,7 @@ body {
   .picture__list {
     font-size: 19px; }
   .main__fon-picture {
-    top: 1080px; }
+    top: 54px; }
   .main__conditions {
     padding: 20px; }
     .main__conditions__picture {
@@ -1369,7 +1372,7 @@ body {
     left: 45px;
     font-size: 18px; }
   .main__fon-picture {
-    top: 980px; }
+    top: 0; }
   .main__conditions__desc {
     width: 410px; }
     .main__conditions__desc__title {
@@ -1613,6 +1616,8 @@ body {
       margin-bottom: 15px; }
   .main {
     margin-bottom: 40px; }
+    .main__fon-picture {
+      top: 90px; }
     .main__conditions {
       display: block; }
       .main__conditions__desc {
@@ -1742,7 +1747,7 @@ body {
     top: 320px;
     width: auto; }
   .main__fon-picture {
-    top: 650px; }
+    top: 1800px; }
   .main__conditions__desc__title {
     line-height: 30px;
     margin-bottom: 30px; }
@@ -1830,6 +1835,8 @@ body {
     width: 320px; }
     .picture__list li {
       width: auto; }
+  .main__fon-picture {
+    top: 2245px; }
   .main__conditions__desc__title {
     font-size: 25px;
     line-height: 30px; }

@@ -3,7 +3,7 @@
 
 body
     padding-top: 9px
-    background: #FFF0D957
+    // background: #FFF0D957
 
 @font-face 
     font-family: 'Mont Light'
@@ -258,10 +258,11 @@ body
             
 
 .main
-    margin-bottom: 114px
+    padding-bottom: 114px
     position: relative
     &__fon-picture
         position: absolute
+        z-index: 1
         top: 1000px
         right: 0
     .container
@@ -303,6 +304,8 @@ body
         &__flex
             display: flex
             align-items: center
+            // background: linear-gradient(#FFF0D957, #FFFFFF)
+            // background: linear-gradient(#FFFFFF, #FFF0D957)
         &__title
             font-family: 'Proxima Nova Thin'
             font-weight: 300
@@ -417,8 +420,8 @@ body
 
 .block-carousel
     position: relative
-    margin-bottom: 56px
-    // overflow: hidden
+    padding-bottom: 56px
+    background: linear-gradient(#FFFFFF, #FFF0D957)
     .container
         max-width: 1744px
         margin: 0 auto
@@ -433,7 +436,6 @@ body
             line-height: 61px
             width: 730px
             margin: 0 410px 0 0
-            // height: 95px
             span
                 font-weight: 600
         &__sign-up
@@ -457,8 +459,6 @@ body
         left: -35px
         border-radius: 40px
         cursor: pointer
-        // position: absolute
-        // z-index: 1
         &__upper
             position: absolute
             top: 30px
@@ -569,7 +569,8 @@ body
     width: 0
 
 .block-video
-    margin-bottom: 112px
+    padding-bottom: 112px
+    background: linear-gradient(#FFF0D957, #FFFFFF)
     .container
         max-width: 1744px
         margin: 0 auto
@@ -751,7 +752,8 @@ body
                     height: 45px
 
 .block-slider
-    margin-bottom: 72px
+    padding-bottom: 72px
+    background: linear-gradient(#FFFFFF, #FFF0D957, #FFFFFF)
     .container
         max-width: 1744px
         margin: 0 auto
@@ -883,7 +885,6 @@ body
         margin: 0 auto
         position: relative
         &__img
-            // width: 1400px
             width: 100%
             min-width: 1000px
             height: 683px
@@ -1323,7 +1324,7 @@ body
 
     .main
         &__fon-picture
-            top: 1080px
+            top: 54px
         .container
         &__conditions
             padding: 20px
@@ -1491,7 +1492,7 @@ body
 
     .main
         &__fon-picture
-            top: 980px
+            top: 0
         &__conditions
             &__desc
                 width: 410px
@@ -1788,6 +1789,8 @@ body
 
     .main
         margin-bottom: 40px
+        &__fon-picture
+            top: 90px
         &__conditions
             display: block
             &__desc
@@ -1945,7 +1948,7 @@ body
 
     .main
         &__fon-picture
-            top: 650px
+            top: 1800px
         &__conditions
             &__desc
                 &__title
@@ -2063,6 +2066,8 @@ body
                 width: auto
 
     .main
+        &__fon-picture
+            top: 2245px
         &__conditions
             &__desc
                 &__title
